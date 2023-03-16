@@ -1,9 +1,9 @@
 # kelompok1-nikahyuk
 
 website pemesanan undangan
-Nama : Dyna Rosalina Pangaribuan
+
 Nama : Syfanadya Wening Adi
 NIM : 670622318
-Nama : Dyna Rosalian
+Nama : Dyna Rosalina Pangaribuan
 NIM : 6706223016
-aku
+
