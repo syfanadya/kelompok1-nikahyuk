@@ -1,0 +1,83 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>Jam Otomatis</title>
+  <script>
+    function updateTime() {
+      var now = new Date();
+      var hours = now.getHours();
+      var minutes = now.getMinutes();
+      var seconds = now.getSeconds();
+      var timeString = hours.toString().padStart(2, '0') + ':' + minutes.toString().padStart(2, '0') + ':' + seconds.toString().padStart(2, '0');
+      document.getElementById('clock').innerHTML = timeString;
+    }
+    setInterval(updateTime, 1000);
+  </script>
+</head>
+<body>
+  <h1>Jam Sekarang:</h1>
+  <div id="clock"></div>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>Lokasi Otomatis</title>
+  <script>
+    function showPosition(position) {
+      var latitude = position.coords.latitude;
+      var longitude = position.coords.longitude;
+      var locationString = "Lokasi Anda: " + latitude + ", " + longitude;
+      document.getElementById('location').innerHTML = locationString;
+    }
+
+    function showError(error) {
+      var errorMessage = "Terjadi kesalahan saat mencari lokasi: ";
+      switch(error.code) {
+        case error.PERMISSION_DENIED:
+          errorMessage += "Akses lokasi ditolak.";
+          break;
+        case error.POSITION_UNAVAILABLE:
+          errorMessage += "Lokasi tidak tersedia.";
+          break;
+        case error.TIMEOUT:
+          errorMessage += "Waktu permintaan lokasi habis.";
+          break;
+        case error.UNKNOWN_ERROR:
+          errorMessage += "Terjadi kesalahan tak diketahui.";
+          break;
+      }
+      document.getElementById('location').innerHTML = errorMessage;
+    }
+
+    function getLocation() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition, showError);
+      } else {
+        document.getElementById('location').innerHTML = "Geolocation tidak didukung oleh browser Anda.";
+      }
+    }
+  </script>
+</head>
+<body onload="getLocation()">
+  <h1>Lokasi Anda:</h1>
+  <div id="location"></div>
+</body>
+</html>
+ -->
+
+ 
+ <!DOCTYPE html>
+<html>
+  <head>
+    <title>Harga dengan Potongan</title>
+  </head>
+  <body>
+    <p>Harga Asli: <del>Rp 100.000</del></p>
+    <p>Harga Diskon: <ins>Rp 75.000</ins></p>
+    <!-- atau -->
+    <p>Harga Asli: <del>Rp 100.000</del> Harga Diskon: <u>Rp 75.000</u></p>
+  </body>
+</html>
+

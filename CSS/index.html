@@ -6,27 +6,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Pembayaran</title>
 
-        <link rel="icon" type="image/x-icon" href="pet shop.jpg">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
         <link rel="stylesheet" href="index.css">
+
     </head>
 
     <body>
+      <a href="uploadPembayaran.html" ><button onclick="location.href = 'index.css';" class="btn1" style="float: left;">Back </button></br>
+        
         <header>
             <h1>Buat Pesanan</h1>
         </header>
     </body>
     <body>
         <p>Nama Lengkap Pengantin Pria</p>
-        <table>
-            <tr>
-              <th>Nama Lengkap Pengantin Pria</th>
-            </tr>
-        </table >
+        
+             <input type="text" id="input1" placeholder="Nama Lengkap Pengantin Pria">
+            
             <p>Nama Lengkap Pengantin Wanita</p>
             <table>
                 <tr>
-                  <th>Nama Lengkap Pengantin Wanita</th>
+                  <th><input type="text" id="input1" placeholder="Nama Lengkap Pengantin Wanita"></th>
                 </tr>
             </table>
             <p>No.HP/Whatsapp</p>
@@ -43,17 +44,19 @@
             </table>
 
 
+            <!-- border="1" style="float: left; margin-right: 70px;" di dalam tabel -->
+            <!-- colspan="3" di dalam th -->
             <p>Waktu Acara</p>
-            <table border="1" style="float: left; margin-right: 70px;">
+            <table >
                 <tr>
-                  <th colspan="3">Waktu</th>
+                  <th >Waktu</th>
                 </tr>
             </table>
 
             <p>Tanggal Acara</p>
             <table>
                 <tr>
-                  <th <label for="tanggal">Pilih tanggal:</label>
+                  <th label for="tanggal">Pilih tanggal:</label>
                     <input type="date" id="tanggal" name="tanggal"> </th>
           </th>
                 </tr>
@@ -128,20 +131,27 @@
             </table>
 
             <p>Nomor Rekening</p>
+            <!-- <table>
+                <tr>
+                  <th<input type="text" id="input1" placeholder="No.Rekening Pengantin Pria"><i class="fas fa-copy"></i></th>
+                </tr>
+            </table> -->
+            <table>
+              <tr>
+                <th><input type="text" id="input1" placeholder="No.Rekening Pengantin Pria" ><i class="fas fa-copy"></th>
+              </tr>
+          </table>
             <table>
                 <tr>
-                  <th>No.Rekening Pengantin Pria</th>
-                </tr>
-                <tr>
-                  <th>No.Rekening Pengantin Wanita</th>
+                  <th>No.Rekening Pengantin Wanita <i class="fas fa-copy"></i></th>
                 </tr>
             </table>
             
           </table>
 
-          <div>KIRIM</div>
+          <a href="sukses.html"><div>KIRIM  </div></a>
 
-          //Success 
+       
 
           
           
