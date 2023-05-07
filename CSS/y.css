@@ -1,0 +1,105 @@
+* {
+    margin: 4px;
+}
+h1 {
+    text-align: center;
+    color: navy;
+}
+/* input {
+    padding: 10px;
+    color: dimgray;
+    float: left;
+    font-size: 15px;
+} */
+
+.row {
+    margin-left: -6px;
+    margin-right: -6px;
+    width: 100%;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    /* display: inline-block; */
+    width: 100%;
+    padding: 6px;
+    
+    
+}
+
+label {
+    margin-left: 16px;
+}
+.kirim {
+    width: 1000px;
+    height: 24px;
+    margin: 50px auto;
+    background-color: rgb(255, 5, 151);
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid black; padding: 10px;
+    border-radius: 40px;
+}
+
+input {
+    padding: 12px;
+    width: 100%; /* panjang input field */
+    border-radius: 4px; 
+    border-width: 0.1px;
+    box-shadow: 4px 4px 0px 0px rgb(233, 233, 233);
+    margin-top: 8px;
+}
+i.fas.fa-copy {
+    font-size: 16px;
+    color: #666;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  p {
+    color: black;
+    position: relative; top: -25px;
+  }
+  .column1 {
+    display: inline-block;
+    width: 40%; /* jarak antara 1 input ke 1 input sebelahnya */
+    padding: 6px;
+    /* float: left; */
+
+}
+.column2 {
+    display: inline-block;
+    width: 40%; /* jarak antara 1 input ke 1 input sebelahnya */
+    padding: 6px;
+    /* float: right; */
+
+}
+label {
+    margin-left: 16px;
+}
+
+
+/* p {
+    margin-left: 16px;
+    font-size: 15px;
+} */
+a {
+    text-decoration: none;
+    
+}
+
+/* table styling */
+/* @media screen and (max-width: 768px){
+    body {
+        width: 100%;
+    }
+    .column {
+        width: 100%;
+        margin: 20px;
+    }
+
+} */
