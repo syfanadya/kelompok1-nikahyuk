@@ -3,7 +3,7 @@
 $server = "localhost";
 $user = "root";
 $pass = "";
-$database = "niagahoster_login";
+$database = "nikah_yuk";
  
 $conn = mysqli_connect($server, $user, $pass, $database);
  
