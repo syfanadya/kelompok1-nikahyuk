@@ -37,7 +37,7 @@ if (isset($_POST['submit'])) {
  
     <link rel="stylesheet" type="text/css" href="style.css">
  
-    <title>Niagahoster Tutorial</title>
+    <title>Nikah Yuk</title>
 </head>
 <body>
     <div class="alert alert-warning" role="alert">
