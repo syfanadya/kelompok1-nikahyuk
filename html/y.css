@@ -37,7 +37,7 @@ label {
     width: 1000px;
     height: 24px;
     margin: 50px auto;
-    background-color: rgb(255, 5, 151);
+    background-color: #FF849C;
     color: black;
     font-size: 20px;
     font-weight: bold;
@@ -53,6 +53,8 @@ input {
     border-width: 0.1px;
     box-shadow: 4px 4px 0px 0px rgb(233, 233, 233);
     margin-top: 8px;
+    /* margin: auto; */
+    justify-content: center;
 }
 i.fas.fa-copy {
     font-size: 16px;
@@ -78,8 +80,32 @@ i.fas.fa-copy {
     /* float: right; */
 
 }
+.block {
+    display: inline-block;
+  }
+.inline-block {
+    display: inline-block;
+    width: 40%; /* jarak antara 1 input ke 1 input sebelahnya */
+    padding: 6px;
+    
+  }
+.edit {
+    padding: 12px;
+    width: 100%; /* panjang input field */
+    border-radius: 4px; 
+    border-width: 0.1px;
+    box-shadow: 4px 4px 0px 0px rgb(233, 233, 233);
+    margin-top: 8px;
+}
+.edit1 {
+    margin-left: 7rem;
+}
 label {
     margin-left: 16px;
+}
+.row1 {
+    margin-left: -6px;
+    margin-right: -6px;
 }
 
 
