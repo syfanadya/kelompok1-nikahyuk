@@ -136,7 +136,7 @@
             <p>Kami mengundang anda untuk hadir di acara pernikahan kami</p>
 
             <div class="tekan">
-                <button class="tombol"><a href="invitation.html">Buka Undangan</a></button>
+                <button class="tombol"><a href="invitation.php">Buka Undangan</a></button>
             </div>       
         </div>
     </div>

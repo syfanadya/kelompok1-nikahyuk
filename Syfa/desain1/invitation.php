@@ -7,11 +7,16 @@
   <!-- font awesome css -->
   <link rel="stylesheet" type="text/css" href="../css/font-awesome.css">
   <!-- main css -->
-  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <!-- responsive css -->
   <link rel="stylesheet" type="text/css" href="css/responsive.css">
   <!-- default skin -->
-  <link rel="stylesheet" class="alternate-style" type="text/css" href="../css/skins/pink.css">
+  <link rel="stylesheet" class="alternate-style" type="text/css" href="css/skins/pink.css">
+  <style>
+    .ucapan-section{
+        background-color: #fb839e;
+    }
+  </style>
 </head>
 <body>
   
@@ -42,9 +47,9 @@
         <ul>
           <li><a href="#home" class="active">Home</a></li>
           <li><a href="#couple">Couple</a></li>
-          <li><a href="#">Story</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#">RSVP</a></li>
+          <li><a href="#acara">Acara</a></li>
+          <li><a href="#gallery">Galeri</a></li>
+          <li><a href="#ucapan">Ucapan</a></li>
         </ul>
       </div>
     </div>
@@ -152,13 +157,41 @@
 </section>
 <!-- COUPLE SECTION END -->
 
-<!-- AYAT SECTION START -->
-<section class="ayat-section">
-  
+<!-- RESEPSI SECTION START -->
+<section class="resepsi-section" id="acara">
   <div class="container">
     <div class="row">
       <div class="section-title">
-        <h2>Ayat Kitab Suci</h2>
+        <h2>Akad & Resepsi Penikahan</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="block1">
+        <i class="fas fa-calendar fa-3x"></i>
+        <p>Minggu, 17 September 2023</p>
+      </div>
+      <div class="block1">
+        <i class="fas fa-clock fa-3x"></i>
+        <p>Pukul 08.00 sd selesai</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="block2">
+        <i class="fas fa-map-marker fa-3x"></i>
+        <p>Gedung Tokong Nanas, Bandung</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- RESEPSI SECTION END -->
+
+<!-- AYAT SECTION START -->
+<section class="ayat-section">
+  <div class="container">
+    <div class="background" style="background-image: url('img/slides/ayat-background.png');">
+    <div class="row">
+      <div class="section-title">
+        <h2 class="h2ayat">Ayat Kitab Suci</h2>
       </div>
     <div class="row">
       <div class="ayat-content">
@@ -166,6 +199,7 @@
           “Wanita yang baik adalah untuk lelaki yang baik. Lelaki yang baik untuk wanita yang baik pula (begitu pula sebaliknya). Bagi mereka ampunan dan reski yang melimpah (yaitu Surga).” (QS. An Nuur (24):26)
         </p>
       </div>
+    </div>
     </div>
   </div>
 </section>
@@ -271,54 +305,33 @@
 </section>
 <!-- GALLERY SECTION END-->
 
-<!-- RSVP SECTION START -->
-<section class="rsvp-section">
+<!-- UCAPAN SECTION START -->
+<section class="ucapan-section" id="ucapan">
   <div class="container">
     <div class="row">
       <div class="section-title">
-        <h2>You Are Invited</h2>
-        <p>Please kindly response</p>
+        <h2>Kirim Ucapan & Doa Restu</h2>
       </div>
     </div>
     <div class="row">
-      <div class="rsvp-form">
+      <div class="ucapan-form">
         <form class="form">
           <div class="row">
-            <div class="input-group w50">
-              <input type="text" placeholder="Name" class="input-control">
-            </div>
-            <div class="input-group w50">
-              <input type="text" placeholder="Email" class="input-control">
+            <div class="input-group">
+              <label>Nama</label>
+              <input type="text" placeholder="Nama Lengkap" class="input-control">
+            </div>  
+          </div>
+          
+          <div class="row">
+            <div class="input-group">
+              <label>Ucapan</label>
+              <textarea placeholder="Tulis Ucapan" class="input-control"></textarea>
             </div>
           </div>
           <div class="row">
             <div class="input-group">
-              <select class="input-control">
-                <option value="">Number of Guest</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option> 
-              </select>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-group">
-              <select class="input-control">
-                <option value="I am attending">I am attending</option>
-                <option value="I am not attending">I am not attending</option>
-              </select>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-group">
-              <textarea placeholder="Message" class="input-control"></textarea>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-group">
-              <button type="submit" class="btn-1">Send</button>
+              <button type="submit" class="btn-1">Kirim</button>
             </div>
           </div>
         </form>
@@ -326,7 +339,7 @@
     </div>
   </div>
 </section>
-<!-- RSVP SECTION END -->
+<!-- UCAPAN SECTION END -->
 
 <!-- FOOTER START -->
 <footer class="footer">
