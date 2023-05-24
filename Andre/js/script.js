@@ -19,11 +19,14 @@ function nextSlide() {
 }
 
 function startSlideshow() {
-  slideInterval = setInterval(nextSlide, 3000); // Ubah slide setiap 2 detik (sesuaikan dengan kebutuhan Anda)
+  if (!slideInterval) {
+    slideInterval = setInterval(nextSlide, 3000); // Ubah slide setiap 2 detik (sesuaikan dengan kebutuhan Anda)
+  }
 }
 
 function stopSlideshow() {
   clearInterval(slideInterval); // Hentikan perubahan slide otomatis
+  slideInterval = null; // Set slideInterval menjadi null setelah dihentikan
   setTimeout(startSlideshow, delay); // Lanjutkan slide otomatis setelah jeda waktu
 }
 
@@ -44,9 +47,11 @@ prevButton.addEventListener("click", previousSlide);
 nextButton.addEventListener("click", function () {
   nextSlide();
   stopSlideshow(); // Berhenti saat tombol "Next" diklik
+  setTimeout(startSlideshow, delay); // Lanjutkan slide otomatis setelah jeda waktu
 });
 
 prevButton.addEventListener("click", function () {
   previousSlide();
   stopSlideshow(); // Berhenti saat tombol "Previous" diklik
+  setTimeout(startSlideshow, delay); // Lanjutkan slide otomatis setelah jeda waktu
 });
