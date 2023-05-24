@@ -24,7 +24,7 @@ if (!isset($_SESSION['username'])) {
             <?php echo "<h1>Selamat Datang, " . $_SESSION['username'] ."!". "</h1>"; ?>
              
             <div class="input-group">
-            <a href="logout.php" class="btn">Logout</a>
+            <a href="../../Andre/dashboard.html" class="btn">Oke</a>
             </div>
         </form>
     </div>

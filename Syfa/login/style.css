@@ -118,6 +118,9 @@ body {
     transform: translateY(-5px);
     background: #FF849C;
 }
+a{
+    text-decoration: none;
+}
  
 @media (max-width: 430px) {
     .container {

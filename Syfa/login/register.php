@@ -53,7 +53,7 @@ if (isset($_POST['submit'])) {
  
     <link rel="stylesheet" type="text/css" href="style.css">
  
-    <title>Niagahoster Register</title>
+    <title>Register</title>
 </head>
 <body>
     <div class="container">
@@ -72,7 +72,7 @@ if (isset($_POST['submit'])) {
                 <input type="password" placeholder="Confirm Password" name="cpassword" value="<?php echo $_POST['cpassword']; ?>" required>
             </div>
             <div class="input-group">
-                <button name="submit" class="btn">Register</button>
+                <button name="submit" class="btn">Sign-Up</button>
             </div>
             <p class="login-register-text">Anda sudah punya akun? <a href="index.php">Login </a></p>
         </form>

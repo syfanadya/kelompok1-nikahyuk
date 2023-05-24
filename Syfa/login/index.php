@@ -37,7 +37,7 @@ if (isset($_POST['submit'])) {
  
     <link rel="stylesheet" type="text/css" href="style.css">
  
-    <title>Niagahoster Tutorial</title>
+    <title>Login & Register</title>
 </head>
 <body>
     <div class="alert alert-warning" role="alert">
@@ -56,7 +56,7 @@ if (isset($_POST['submit'])) {
             <div class="input-group">
                 <button name="submit" class="btn">Login</button>
             </div>
-            <p class="login-register-text">Anda belum punya akun? <a href="register.php">Register</a></p>
+            <p class="login-register-text">Anda belum punya akun? <a href="register.php">Sign-Up</a></p>
         </form>
     </div>
 </body>

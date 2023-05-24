@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Profile</title>
+        <style>
+          body {
+            margin: 0;
+            line-height: 1.5;
+            font-size: 16px;
+            font-weight: 400;
+            background-color: #f3f2f1;
+        }
+        *:not(i){
+            font-family: 'Roboto', sans-serif;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        a{
+            text-decoration: none;
+        }
+        :before,:after{
+            box-sizing: border-box;
+        }
+        img{
+            max-width: 100%;
+            vertical-align: middle;
+        }
+        .container{
+            max-width: 1140px;
+            margin: auto;
+        }
+        header,
+        section,
+        footer{
+            display: block;
+            width: 100%;
+        }
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .justify-content-between{
+            justify-content: space-between;
+        }
+        .align-items-center{
+            align-items: center;
+        }
+        .section-title{
+            flex: 0 0 100%;
+            max-width: 100%;
+            padding: 0 15px;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        .section-title h2{
+            font-size: 45px;
+            color: #000000;
+            font-weight: 700;
+            font-family: 'Great Vibes', cursive;
+            letter-spacing: 2px;
+        }
+
+        .btn-1{
+            padding: 10px 35px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            border: 2px solid transparent;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.5s ease;
+            font-weight: 500;
+        }
+        .btn-1:focus{
+            outline: none;
+        }
+        .btn-1:hover{
+            background-color: transparent;
+        }
+
+        /* DEFAULT END */
+        .profile-section{
+            padding: 80px 0 80px;
+        }
+        .profile-section .profile-block h3{
+            font-size: 16px; 
+            line-height: 26px;
+            color: #555555;
+            margin: 0;
+            text-align: center;
+        }
+        .profile-section .profile-block{
+            flex: 0 0 50%;
+            max-width: 50%;
+            padding: 0 60px;
+            text-align: center;
+            position: relative;
+        }
+        .profile-section .profile-block img{
+            max-width: 250px;
+            width: 100%;
+            margin: 40px 0;
+        }
+        .norek-copy {
+            position: relative;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+        .norek-copy input.text {
+            padding: 10px;
+            font-size: 16px;
+            color: #555555;
+            text-align: center;
+            border: none;
+            outline: none;
+        }
+        .norek-copy button {
+            padding: 5px;
+            color: #555555;
+            font-size: 16px;
+            border: none;
+            outline: none;
+            background: #fff;
+            cursor: pointer;
+        }
+        .amplop-section .bank .name-norek p{
+            padding: 10px;
+            font-size: 16px; 
+            line-height: 26px;
+            color: #555555;
+            margin: 0;
+            text-align: center;
+        } 
+        </style>
+    </head>
+    <body>
+        <section class="profile-section">
+            <div class="container">
+                <div class="row">
+                    <div clas="profile-block">
+                        <img src="images/users-foto/yonna.jpg" alt="Foto">
+                    </div>
+                    <div clas="profile-block">
+                            <h2>Profile</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
