@@ -110,9 +110,14 @@ if (!isset($_POST['norek_pengantin_wanita'])) {
     echo "<p> Nomor rekening wanita pria tidak boleh kosong.</p>";
     exit();
 }
+if (!isset($_POST['lagu'])) {
+    echo "<p> Lagu tidak boleh kosong.</p>";
+    exit();
+}
 
 
 $sql =  "INSERT INTO pesanan (
+            desain,
             nama_pengantin_pria,
             nama_pengantin_wanita,
             nomor_hp,
@@ -130,8 +135,10 @@ $sql =  "INSERT INTO pesanan (
             foto_galeri,
             norek_pengantin_pria,
             norek_pengantin_wanita,
+            lagu,
             tanggal_pemesanan)
         VALUES (
+            '$_POST[desain]', 
             '$_POST[nama_pengantin_pria]', 
             '$_POST[nama_pengantin_wanita]', 
             '$_POST[nomor_hp]', 
@@ -149,6 +156,7 @@ $sql =  "INSERT INTO pesanan (
             '$_POST[foto_galeri]',
             '$_POST[norek_pengantin_pria]',
             '$_POST[norek_pengantin_wanita]',
+            '$_POST[lagu]',
             NOW())";
 if (mysqli_query($conn,$sql)) {
     header( "refresh:2;url=../popup/sukses.html" );

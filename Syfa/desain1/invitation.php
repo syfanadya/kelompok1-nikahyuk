@@ -5,7 +5,7 @@
   <title>Jongsuk & Yoona</title>
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <!-- font awesome css -->
-  <link rel="stylesheet" type="text/css" href="../css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
   <!-- main css -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <!-- responsive css -->
@@ -315,7 +315,7 @@
     </div>
     <div class="row">
       <div class="ucapan-form">
-        <form class="form">
+        <form class="form" action="proses.php" method="POST">
           <div class="row">
             <div class="input-group">
               <label>Nama</label>
@@ -337,9 +337,14 @@
         </form>
       </div>
     </div>
+    
   </div>
 </section>
 <!-- UCAPAN SECTION END -->
+
+<!-- TAMPILAN UCAPAN SECTION START  -->
+
+<!-- TAMPILAN UCAPAN SECTION END  -->
 
 <!-- FOOTER START -->
 <footer class="footer">
