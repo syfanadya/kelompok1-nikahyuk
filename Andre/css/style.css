@@ -128,6 +128,8 @@
   width: 85%;
   height: 75%;
   border-radius: 1.5rem;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25),
+    -5px -5px 5px rgba(0, 0, 0, 0.25);
 }
 
 .mengapa-slide .mengapa-pre1,
@@ -192,7 +194,7 @@
   width: 100%;
   height: 25%;
   /* background-color: #0f025f; */
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
 }
 
 .katalog .katalog-textp1 {
@@ -238,8 +240,6 @@
 .katalog .content .container-katalog1 .img1 {
   width: 400px;
   height: 400px;
-  display: block;
-  margin: auto;
 }
 
 .katalog .content .container-katalog1 .target1 {
@@ -257,8 +257,6 @@
 .katalog .content .container-katalog2 .img2 {
   width: 400px;
   height: 400px;
-  display: block;
-  margin: auto;
 }
 
 .katalog .content .container-katalog2 .target2 {
@@ -276,8 +274,6 @@
 .katalog .content .container-katalog3 .img3 {
   width: 400px;
   height: 400px;
-  display: block;
-  margin: auto;
 }
 
 .katalog .content .container-katalog3 .target3 {
@@ -296,10 +292,20 @@
 
 .komentar {
   width: 100%;
+  height: 25%;
+  background-color: #0f025f;
+}
+
+.komentar .title {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: -10rem;
 }
 
 .pertanyaan {
   width: 100%;
+  height: 25%;
+  background-color: #ff849c;
 }
 
 /* homepage end */
@@ -333,5 +339,4 @@
 div {
   float: left;
 }
-
 /* =======float bg */

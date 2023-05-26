@@ -20,7 +20,7 @@ function nextSlide() {
 
 function startSlideshow() {
   if (!slideInterval) {
-    slideInterval = setInterval(nextSlide, 3000); // Ubah slide setiap 2 detik (sesuaikan dengan kebutuhan Anda)
+    slideInterval = setInterval(nextSlide, 4000); // Ubah slide setiap 2 detik (sesuaikan dengan kebutuhan Anda)
   }
 }
 
