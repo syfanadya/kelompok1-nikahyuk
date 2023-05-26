@@ -193,14 +193,19 @@
 .katalog {
   width: 100%;
   height: 25%;
-  /* background-color: #0f025f; */
-  /* margin-top: 2rem; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.katalog .pembungkus {
+  width: 85%;
+  height: 80%;
 }
 
 .katalog .katalog-text {
   text-align: center;
   color: #0f025f;
-  /* color: #ffffff; */
   font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 50px;
@@ -211,7 +216,7 @@
   height: 100%;
   display: flex;
   justify-content: center; /* Mengatur posisi konten di dalam kontainer secara horizontal di tengah */
-  margin-top: 4rem;
+  margin-top: 3rem;
 }
 
 .katalog .content .container-katalog {
@@ -252,34 +257,51 @@
 
 /* ===== end katalog */
 
+/* ===== start komen */
 .komentar {
   width: 100%;
   height: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.komentar .komentar-text {
+.komentar .komen {
+  width: 85%;
+  height: 100%;
+}
+
+.komentar .komen-title {
   text-align: center;
   color: #0f025f;
-  /* color: #ffffff; */
   font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 50px;
-  margin-top: 10rem;
+  margin-top: 3rem;
 }
+
+/* ===== end komen */
 
 .pertanyaan {
   width: 100%;
   height: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.pertanyaan .pertanyaan-text {
+.pertanyaan .tanya {
+  width: 85%;
+  height: 100%;
+}
+
+.pertanyaan .pertanyaan-title {
   text-align: center;
   color: #0f025f;
-  /* color: #ffffff; */
   font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 50px;
-  margin-top: 10rem;
+  margin-top: 3rem;
 }
 
 /* homepage end */
