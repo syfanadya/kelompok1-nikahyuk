@@ -197,7 +197,7 @@
   /* margin-top: 2rem; */
 }
 
-.katalog .katalog-textp1 {
+.katalog .katalog-text {
   text-align: center;
   color: #0f025f;
   /* color: #ffffff; */
@@ -214,11 +214,9 @@
   margin-top: 4rem;
 }
 
-.katalog .content .container-katalog1,
-.container-katalog2,
-.container-katalog3 {
-  width: 400px;
-  height: 600px;
+.katalog .content .container-katalog {
+  width: 340px;
+  height: 480px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25),
     -5px -5px 5px rgba(0, 0, 0, 0.25);
   background-color: #ffffff;
@@ -227,64 +225,28 @@
   border-radius: 15px;
 }
 
-.katalog .content .container-katalog1-p1,
-.container-katalog1-p2,
-.container-katalog1-p3 {
+.katalog .content .title-katalog {
   color: #0f025f;
   font-family: "Inter", sans-serif;
   font-weight: 700;
-  font-size: 35px;
+  font-size: 30px;
   margin-top: 2rem;
 }
 
-.katalog .content .container-katalog1 .img1 {
-  width: 400px;
-  height: 400px;
+.katalog .content .container-katalog .img-katalog {
+  width: 320px;
+  height: 320px;
 }
 
-.katalog .content .container-katalog1 .target1 {
+.katalog .content .container-katalog .target-katalog {
   text-decoration: none;
   color: #ffffff;
   font-family: "Inter", sans-serif;
-  font-size: 25px;
+  font-size: 18px;
   font-weight: 700;
   text-align: center;
   background-color: #ff849c;
-  padding: 1rem 3rem;
-  border-radius: 2rem;
-}
-
-.katalog .content .container-katalog2 .img2 {
-  width: 400px;
-  height: 400px;
-}
-
-.katalog .content .container-katalog2 .target2 {
-  text-decoration: none;
-  color: #ffffff;
-  font-family: "Inter", sans-serif;
-  font-size: 25px;
-  font-weight: 700;
-  text-align: center;
-  background-color: #ff849c;
-  padding: 1rem 3rem;
-  border-radius: 2rem;
-}
-
-.katalog .content .container-katalog3 .img3 {
-  width: 400px;
-  height: 400px;
-}
-
-.katalog .content .container-katalog3 .target3 {
-  text-decoration: none;
-  color: #ffffff;
-  font-family: "Inter", sans-serif;
-  font-size: 25px;
-  font-weight: 700;
-  text-align: center;
-  background-color: #ff849c;
-  padding: 1rem 3rem;
+  padding: 0.8rem 2.7rem;
   border-radius: 2rem;
 }
 
