@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Italiana&family=Sacramento&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;500;700&display=swap");
+* {
+  margin: 0;
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("../aset/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content .left-bg,
+.right-bg {
+  width: 395px;
+  height: 789.8px;
+  position: absolute;
+}
+
+.content .left-bg {
+  bottom: 0;
+  left: 0;
+}
+.content .right-bg {
+  bottom: 0;
+  right: 0;
+}
+
+.content .prewed {
+  width: 300px;
+  height: 300px;
+  display: block;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+.content .text {
+  margin-bottom: 10rem;
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+.content h1,
+p {
+  text-align: center;
+}
+
+.content h1 {
+  font-family: "Italiana", serif;
+  font-weight: 400;
+  font-size: 60px;
+  margin-bottom: 1rem;
+  word-spacing: 5rem;
+}
+
+.content p {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-size: 28px;
+}
+
+.content .open {
+  text-decoration: none;
+  font-family: "Italiana", serif;
+  font-weight: 100;
+  font-size: 24px;
+  color: #000000;
+  background-color: #ffd6d6;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  display: inline-block;
+  margin-top: 2rem;
+  transition: 0.3s ease-in;
+}
+
+.content .open:hover {
+  background-color: #ff849c;
+}
