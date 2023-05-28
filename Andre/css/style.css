@@ -21,7 +21,7 @@ html {
   justify-content: space-between;
   align-items: center;
   padding: 1.4rem 7%;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -400,13 +400,12 @@ div {
     display: inline-block;
   }
 
-  .navbar .navbar-nav,
-  .navbar-nav-home {
+  .navbar .navbar-nav {
     position: absolute;
     top: 100%;
     right: -100%;
     background-color: #fff;
-    width: 30rem;
+    /* width: 25rem; */
     height: 100vh;
     transition: 0.3s;
   }
@@ -434,7 +433,7 @@ div {
     top: 100%;
     right: -100%;
     background-color: #fff;
-    width: 30rem;
+    width: 25rem;
     height: 100vh;
     transition: 0.3s;
   }
@@ -454,5 +453,12 @@ div {
   }
   .navbar .navbar-nav-home a:hover::after {
     transform: scaleX(0.2);
+  }
+}
+
+/* mobile */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
   }
 }
