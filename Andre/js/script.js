@@ -55,3 +55,19 @@ prevButton.addEventListener("click", function () {
   stopSlideshow(); // Berhenti saat tombol "Previous" diklik
   setTimeout(startSlideshow, delay); // Lanjutkan slide otomatis setelah jeda waktu
 });
+
+// toggle class active
+const navbarNav = document.querySelector(".navbar-nav, .navbar-nav-home");
+// ketika hamburger-menu diklik
+document.querySelector("#hamburger-menu").onclick = () => {
+  navbarNav.classList.toggle("active");
+};
+
+// klik di luar site bar untuk menghilangkan nav
+const hamburger = document.querySelector("#hamburger-menu");
+
+document.addEventListener("click", function (e) {
+  if (!hamburger.contains(e.target) && !navbarNav.contains(e.target)) {
+    navbarNav.classList.remove("active");
+  }
+});

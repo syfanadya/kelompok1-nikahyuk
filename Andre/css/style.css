@@ -6,6 +6,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* homepage start */
 
 .body-home-page {
@@ -304,6 +308,46 @@
   margin-top: 3rem;
 }
 
+.tanya .box {
+  width: 100%;
+  height: 86.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: -3rem;
+}
+
+.box .box-pertanyaan {
+  width: 1100px;
+  height: 40px;
+  background-color: #ffffff;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25),
+    -5px -5px 5px rgba(0, 0, 0, 0.25);
+  margin: 1rem;
+  overflow: hidden;
+  transition: height 0.5s ease-in-out;
+  padding-top: 20px;
+}
+.box-pertanyaan .ditanya {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  padding-left: 1.5rem;
+}
+
+.box-pertanyaan .jawab {
+  font-family: "Inter", sans-serif;
+  font-weight: lighter;
+  font-size: 20px;
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+}
+
+.box .box-pertanyaan:hover {
+  height: 100px;
+}
+
 /* homepage end */
 
 /* home start */
@@ -336,3 +380,79 @@ div {
   float: left;
 }
 /* =======float bg */
+
+/* media queries */
+
+/* laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  .navbar .navbar-nav,
+  .navbar-nav-home {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #fff;
+    width: 30rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+  .navbar .navbar-nav a {
+    color: #0f025f;
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
+
+  /*  */
+  .navbar .navbar-nav-home {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #fff;
+    width: 30rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+
+  .navbar .navbar-nav-home.active {
+    right: 0;
+  }
+  .navbar .navbar-nav-home a {
+    color: #0f025f;
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+  .navbar .navbar-nav-home a::after {
+    transform-origin: 0 0;
+  }
+  .navbar .navbar-nav-home a:hover::after {
+    transform: scaleX(0.2);
+  }
+}
