@@ -4,30 +4,40 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home Page</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <title>Home</title>
+    <link rel="stylesheet" href="./cssdashboard/style.css" />
+    <!-- font awesome css -->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
     <script src="https://unpkg.com/feather-icons"></script>
   </head>
   <body class="body-home-page">
     <!-- navbar start -->
     <nav class="navbar">
-      <a href="#" class="navbar-logo"><img src="./aset/logo.png" alt="" /></a>
+      <a href="#" class="navbar-logo"><img src="./asetdashboard/logo.png" alt="" /></a>
 
-      <div class="navbar-nav">
-        <a href="#mengapa">Mengapa Ny</a>
+      <div class="navbar-nav-home">
         <a href="#katalog">Katalog</a>
+        <a href="pesanan.php">Pemesanan</a>
+        <a href="pembayaran.php">Pembayaran</a>
+        <a href="statuspemesanan.php">Status Pemesanan</a>
         <a href="#komentar">Komentar</a>
         <a href="#pertanyaan">Pertanyaan</a>
       </div>
 
-      <div class="navbar-extra">
-        <a href="../Syfa/login/index.php">LOGIN</a>
-        <a href="../Syfa/login/register.php" class="sign-up">SIGN UP</a>
+      <div class="navbar-extra-home">
+        <a href="profile.php">
+            PROFILE
+        </a>
+        <a href="logout.php">
+            LOGOUT
+        </a>
         <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
       </div>
     </nav>
-
     <!-- navbar end -->
+
+
+
 
     <div class="home-text">
       <pre class="pre1">
@@ -44,19 +54,17 @@
       </p>
       </pre>
     </div>
-    
 
-    
-      
     <section class="hero" id="home">
       <main class="content">
-        <img class="img-home1" src="./aset/home-1.png" alt=""> 
-        <img class="img-home2" src="./aset/home-2.png" alt="">
+        <img class="img-home1" src="./asetdashboard/home-1.png" alt=""> 
+        <img class="img-home2" src="./asetdashboard/home-2.png" alt="">
       </main>
     </section>
-    
-    <!-- mengapa ny start -->
 
+
+
+    <!-- mengapa ny start -->
     <section id="mengapa" class="mengapa">
       <div class="mengapa-slide">
         <pre class="mengapa-pre1">
@@ -64,7 +72,7 @@ Mengapa Menggunakan
 Undangan Digital
         </pre>
 
-        <img class="img-mengapa1" src="./aset/mengapa1.png" alt="">
+        <img class="img-mengapa1" src="./asetdashboard/mengapa1.png" alt="">
         <p class="mengapa-p1">Praktis</p>
         <pre class="mengapa-pre2">
 Kamu dapat memesan undangan kapan saja dan di mana saja
@@ -81,7 +89,7 @@ Mengapa Menggunakan
 Undangan Digital
         </pre>
 
-        <img class="img-mengapa1" src="./aset/mengapa2.png" alt="">
+        <img class="img-mengapa1" src="./asetdashboard/mengapa2.png" alt="">
         <p class="mengapa-p1">Ramah Lingkungan </p>
         <pre class="mengapa-pre2">
 Kamu bisa mengurangi limbah sampah plastik 
@@ -98,7 +106,7 @@ Mengapa Menggunakan
 Undangan Digital
         </pre>
 
-        <img class="img-mengapa1-slide3" src="./aset/mengapa3.png" alt="">
+        <img class="img-mengapa1-slide3" src="./asetdashboard/mengapa3.png" alt="">
         <p class="mengapa-p1">Hemat Biaya dan Waktu </p>
         <pre class="mengapa-pre2">
 Undangan pernikahan digital memungkinkan kamu 
@@ -107,11 +115,12 @@ undangan tanpa batas.
         </pre>
       </div>
       
-      <button id="prevButton" class="prevButton"><img src="./aset/left2.png" alt=""></button>
-      <button id="nextButton" class="nextButton"><img src="./aset/right.png" alt=""></button> 
+      <button id="prevButton" class="prevButton"><img src="./asetdashboard/left2.png" alt=""></button>
+      <button id="nextButton" class="nextButton"><img src="./asetdashboard/right.png" alt=""></button> 
 
     </section>
     <!-- mengapa ny end -->
+
 
 
     <!-- katalog start -->
@@ -122,30 +131,25 @@ undangan tanpa batas.
 
     <div class="content">
       <div class="container-katalog">
-        <p class="title-katalog">Monochrome </p>
-        <img class="img-katalog" src="./aset/des1.png" alt="">
+        <p class="title-katalog">Classic</p>
+        <img class="img-katalog" src="./asetdashboard/des1.png" alt="">
         <a class="target-katalog" href="#">LIHAT DETAIL</a>
       </div>
       <div class="container-katalog">
-        <p class="title-katalog">Vintage </p>
-        <img class="img-katalog" src="./aset/des2.png" alt="">
+        <p class="title-katalog"> Blue Flower</p>
+        <img class="img-katalog" src="./asetdashboard/des2.png" alt="">
         <a class="target-katalog" href="#">LIHAT DETAIL</a>
       </div>
       <div class="container-katalog">
-        <p class="title-katalog">Monochrome </p>
-        <img class="img-katalog" src="./aset/des3.png" alt="">
-        <a class="target-katalog" href="#">LIHAT DETAIL</a>
-      </div>
-      <div class="container-katalog">
-        <p class="title-katalog">Monochrome </p>
-        <img class="img-katalog" src="./aset/des3.png" alt="">
+        <p class="title-katalog">Golden</p>
+        <img class="img-katalog" src="./asetdashboard/des3.png" alt="">
         <a class="target-katalog" href="#">LIHAT DETAIL</a>
       </div>
     </div>
       </div>
   </section>
-   <!-- katalog end -->
-
+  <!-- katalog end -->
+   
 
 
   <!-- komentar start -->
@@ -155,7 +159,6 @@ undangan tanpa batas.
     </div>
   </section>
   <!-- komentar end -->
-
 
   <!-- pertanyaan start -->
   <section id="pertanyaan" class="pertanyaan">
@@ -179,13 +182,10 @@ undangan tanpa batas.
   </section>
   <!-- pertanyaan end -->
 
-
-    
-    
-  <script>
+   <script>
     feather.replace()
   </script>
-    <script src="./js/script.js"></script>
-
+    <script src="./jsdashboard/script.js"></script>
+      
   </body>
 </html>
