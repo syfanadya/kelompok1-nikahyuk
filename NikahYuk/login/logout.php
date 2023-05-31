@@ -1,8 +1,9 @@
 <?php 
  
 session_start();
+session_unset();
 session_destroy();
  
-header("Location: ../../Andre/homepage.html");
+header( "refresh:3;url=homepage.php" );
  
 ?>
