@@ -60,7 +60,7 @@ require_once "config.php";
           <li class="dropdown"><a href="buatpesanan.php"><span>Pemesanan</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="#">Status Pesanan</a></li>
-              <li><a href="#buatpesanan">Buat Pesanan</a></li>
+              <li><a href="buatpesanan.php">Buat Pesanan</a></li>
             </ul>
           </li>
 
@@ -95,9 +95,9 @@ require_once "config.php";
         <ol>
           <li><a href="index.html">Beranda</a></li>
           <li>Pemesanan</li>
-          <li>Buat Pesanan</li>
+          <li>Status Pesanan</li>
         </ol>
-        <h2>Buat Pesanan</h2>
+        <h2>Status Pesanan</h2>
 
       </div>
     </section><!-- End Breadcrumbs -->
@@ -111,156 +111,47 @@ require_once "config.php";
             <div class="pesanan-info">
               <h3>Detail Pesanan</h3>
               <ul>
-                <li><a href="statuspesanan.php"><strong>Status Pesanan</strong></a></li>
-                <li><a href="#buatpesanan"><strong>Buat Pesanan</strong></a></li>
+                <li><a href="#"><strong>Status Pesanan</strong></a></li>
+                <li><a href="buatpesanan.php"><strong>Buat Pesanan</strong></a></li>
               </ul>
             </div> 
           </div>
 
-
           <div class="col-lg-8">
-
-            <div class="pesanan-form">
-            <form enctype="multipart/form-data" class="form" action="prosespesanan.php" method="POST" id="buatpesanan">
-
-              <div class="row">
-                <div class="input-group">
-                  <label>Type Desain</label>
-                  <select class="input-control" name="desain">
-                    <option value="Classic">Classic</option>
-                    <option value="Blue Flower">Blue Flower</option>
-                    <option value="Golden">Golden</option>
-                  </select>
-                </div>
-              </div>
-
-              <div class="row">
-                  <div class="input-group">
-                  <label>Nama Pengantin Pria</label>
-                  <input type="text" placeholder="Nama Lengkap : Lee Jongsuk" class="input-control" name="nama_pengantin_pria">
-                  </div> 
-              </div>
-
-              <div class="row">
-                <div class="input-group">
-                  <Label>Nama Pengantin Wanita</Label>
-                  <input type="text" placeholder="Nama Lengkap : Im Yoon Ah" class="input-control" name="nama_pengantin_wanita">
-                </div> 
-              </div>
-
-              <div class="row">
-                <div class="input-group">
-                  <label>Nomor HP/Whatsapp</label>
-                  <input type="text" placeholder="Nomor : 0829-0080-0705" class="input-control" name="nomor_hp">
-                </div> 
-              </div>
-
-              <div class="row">
-                <div class="input-group">
-                  <label>Lokasi Acara</label>
-                  <input type="text" placeholder="Lokasi Acara" class="input-control" name="lokasi_acara">
-                </div> 
-              </div>
-
-              <div class="row">
-                <div class="input-group">
-                  <label>Waktu Acara</label>
-                  <input type="text" placeholder="Waktu Acara : 08:00 - selesai" class="input-control" name="waktu_acara">
-                </div>  
-              </div>
-
-              <div class="row">
-                <div class="input-group">
-                  <label for="date">Tanggal Acara</label>
-                  <input type="date" class="input-control" name="tanggal_acara">
-                </div> 
-              </div>
-
-              <div class="row">
-                <div class="input-group">
-                  <label>Nama Orang Tua Pengantin Pria</label>
-                </div>
-                <div class="input-group w50">
-                  <input type="text" placeholder="Nama Ayah : Abdul" class="input-control" name="nama_ayah_pengantin_pria">
-                </div>
-                <div class="input-group w50">
-                  <input type="text" placeholder="Nama Ibu : Maria" class="input-control" name="nama_ibu_pengantin_pria">
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="input-group">
-                  <label>Nama Orang Tua Pengantin Wanita</label>
-                </div>
-                <div class="input-group w50">
-                  <input type="text" placeholder="Nama Ayah : Situmorang" class="input-control" name="nama_ayah_pengantin_wanita">
-                </div>
-                <div class="input-group w50">
-                  <input type="text" placeholder="Nama Ibu : Riana" class="input-control" name="nama_ibu_pengantin_wanita">
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="input-group">
-                  <label>Ayat Kitab Suci</label>
-                  <textarea placeholder="Ayat Kitab Suci : “Wanita yang baik adalah untuk lelaki yang baik. Lelaki yang baik untuk wanita yang baik pula (begitu pula sebaliknya). Bagi mereka ampunan dan reski yang melimpah (yaitu Surga).” (QS. An Nuur (24):26)" class="input-control" name="ayat_kitab_suci"></textarea>
-                </div>
-              </div>
-
-
-
-              <div class="row">
-                <div class="input-group w50">
-                  <label>Foto Pengantin Pria</label>
-                  <input type="file"  name="foto_pengantin_pria" class="input-control">
-                </div>
-                <div class="input-group w50">
-                  <label>Foto Pengantin Wanita</label>
-                  <input type="file"  name="foto_pengantin_wanita" class="input-control">
-                </div>
-              </div>     
-
-              <div class="row">
-                <div class="input-group">
-                  <label>Foto Prewedding (Maksimal 3 Foto)</label>
-                  <input type="file"  name="foto_prewedd" class="input-control" multiple>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="input-group">
-                  <label>Foto Galeri (Maksimal 6 Foto)</label>
-                  <input type="file"  name="foto_galeri" class="input-control" multiple>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="input-group">
-                  <label>Nomor Rekening</label>
-                </div>
-                <div class="input-group w50">
-                  <input type="text" placeholder="No.Rek Pengantin Pria" class="input-control" name="norek_pengantin_pria">
-                </div>
-                <div class="input-group w50">
-                  <input type="text" placeholder="No.Rek Pengantin Wanita" class="input-control" name="norek_pengantin_wanita">
-                </div>
-              </div>     
-
-              <div class="row">
-                <div class="input-group">
-                  <label>Lagu</label>
-                  <input type="text" placeholder="Judul Lagu : It's You - Sezairi" class="input-control" name="lagu" >
-                </div>
-              </div>
-                    
-
-              <div class="row">
-                <div class="input-group">
-                  <button type="submit" class="btn-1">Send</button>
-                </div>
-              </div>
-              </form>
-            </div>
+            <div class="status-info">
+            <table>
+                <tr>
+                  <th>No.</th>
+                  <th>Pesanan</th>
+                </tr>
+                <?php 
+                  require_once "config.php";
+                  $sql ="SELECT 
+                            id_pesanan, 
+                            desain, 
+                            tanggal_pemesanan,
+                            status_pesanan 
+                          FROM pesanan
+                          WHERE iduser = $_SESSION[iduser] 
+                          ORDER BY id_pesanan DESC";
+                  $result = mysqli_query($conn, $sql);
+                  $nomor = 0;
+                  while ($row = mysqli_fetch_array($result)) {
+                    $nomor++;
+                ?>
+                  <tr>
+                    <td><?php echo $nomor; ?></td>
+                    <td>
+                      <b>Type Desain : </b><?php echo $row[1];?><br/>
+                      <b>Waktu Pesan : </b><?php echo $row[2];?><br/>
+                      <b>Status : </b><?php echo $row[3];?><br/>
+                    </td>
+                  </tr>
+                <?php
+                  }
+                ?>
+              </table>
+            </div> 
           </div>
 
         </div>

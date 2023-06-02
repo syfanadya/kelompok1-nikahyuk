@@ -227,7 +227,7 @@ section {
   font-family: "Nunito", sans-serif;
   font-size: 16px;
   font-weight: 700;
-  color: #878787;
+  color: black;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -403,7 +403,7 @@ section {
 .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: #878787;
+  color: black;
 }
 
 .navbar-mobile a:hover,
@@ -469,7 +469,7 @@ section {
   font-weight: 700;
   margin-bottom: 20px;
   padding-bottom: 20px;
-  border-bottom: 2px solid #eee;
+  border-bottom: 2px solid #ffaabb;
 }
 
 .pesanan-details .pesanan-info ul {
@@ -546,11 +546,31 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Status Pesanan
+--------------------------------------------------------------*/
+.pesanan-details .status-info {
+  padding: 30px;
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+}
+.pesanan-details table{
+  width: 100%;
+  border-collapse: collapse;
+}
+.pesanan-details table th {
+  text-align: left;
+  padding: 10px;
+  border: 2px solid #ffaabb;
+}
+.pesanan-details table td{
+  padding: 10px;
+  border: 2px solid #ffaabb;
+}
+/*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 .footer {
   background: #f6f9ff;
-  padding: 0 0 30px 0;
+  padding: 0 0 30px 10px;
   font-size: 14px;
 }
 
