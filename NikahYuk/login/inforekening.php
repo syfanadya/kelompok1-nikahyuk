@@ -9,7 +9,7 @@ require_once "config.php";
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Status Pesanan</title>
+  <title>Info Rekening</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -54,21 +54,21 @@ require_once "config.php";
         <ul>
           <li><a class="nav-link scrollto " href="dashboard.php">Beranda</a></li>
           <li><a class="nav-link scrollto" href="dashboard.php#katalog">Katalog</a></li>
-          <li><a class="nav-link scrollto" href="dashboard.php#komentar">Komentar</a></li>
-          <li><a class="nav-link scrollto" href="dashboard.php#pertanyaan">Pertanyaan</a></li>
+          <li><a class="nav-link scrollto" href="#dashboard.php#komentar">Komentar</a></li>
+          <li><a class="nav-link scrollto" href="#dashboard.php#pertanyaan">Pertanyaan</a></li>
 
-          <li class="dropdown"><a href="buatpesanan.php"><span>Pemesanan</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a href="statuspesanan.php"><span>Pemesanan</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="#">Status Pesanan</a></li>
-              <li><a href="buatpesanan.php">Buat Pesanan</a></li>
+              <li><a href="statuspesanan.php">Status Pesanan</a></li>
+              <li><a href="#buatpesanan">Buat Pesanan</a></li>
             </ul>
           </li>
 
           <li class="dropdown"><a href="statuspembayaran.php"><span>Pembayaran</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="#">Info Rekening</a></li>
-              <li><a href="#">Upload Bukti Pembayaran</a></li>
-              <li><a href="#">Status Pembayaran</a></li>
+              <li><a href="inforekening.php">Info Rekening</a></li>
+              <li><a href="submitbukti.php">Upload Bukti Pembayaran</a></li>
+              <li><a href="statuspembayaran.php">Status Pembayaran</a></li>
             </ul>
           </li>
 
@@ -94,59 +94,42 @@ require_once "config.php";
 
         <ol>
           <li><a href="index.html">Beranda</a></li>
-          <li>Pemesanan</li>
-          <li>Status Pesanan</li>
+          <li>Pembayaran</li>
+          <li>Info Rekening</li>
         </ol>
-        <h2>Status Pesanan</h2>
+        <h2>Info Rekening</h2>
 
       </div>
     </section><!-- End Breadcrumbs -->
 
-    <!-- ======= Pesanan Section ======= -->
-    <section id="pesanan-details" class="pesanan-details">
+    <!-- ======= Pembayaran Section ======= -->
+    <section id="pembayaran-details" class="pembayaran-details">
       <div class="container">
         <div class="row gy-4">
 
           <div class="col-lg-4">
-            <div class="pesanan-info">
-              <h3>Detail Pesanan</h3>
+            <div class="pembayaran-info">
+              <h3>Detail Pembayaran</h3>
               <ul>
-                <li><a href="#"><strong>Status Pesanan</strong></a></li>
-                <li><a href="buatpesanan.php"><strong>Buat Pesanan</strong></a></li>
+                <li><a href="inforekening.php"><b>Info Rekening</b></a></li>
+                <li><a href="submitbukti.php"><b>Upload Bukti Pembayaran</b></a></li>
+                <li><a href="statuspembayaran.php"><b>Status Pembayaran</b></a></li>
               </ul>
             </div> 
           </div>
 
+
           <div class="col-lg-8">
-            <div class="status-info">
-            <table>
-                <?php 
-                  require_once "config.php";
-                  $sql ="SELECT 
-                            id_pesanan, 
-                            desain, 
-                            tanggal_pemesanan,
-                            status_pesanan 
-                          FROM pesanan
-                          WHERE iduser = $_SESSION[iduser] 
-                          ORDER BY id_pesanan DESC";
-                  $result = mysqli_query($conn, $sql);
-                  $nomor = 0;
-                  while ($row = mysqli_fetch_array($result)) {
-                    $nomor++;
-                ?>
-                  <tr>
-                    <td>
-                      <b>Type Desain : </b><?php echo $row[1];?><br/>
-                      <b>Waktu Pesan : </b><?php echo $row[2];?><br/>
-                      <b>Status : </b><?php echo $row[3];?><br/>
-                    </td>
-                  </tr>
-                <?php
-                  }
-                ?>
-              </table>
-            </div> 
+            <div class="rekening-info">
+              <h3>Lakukan Pembayaran</h3>
+              <h4><b>Rp. 250.000</b></h4>
+              <p>Nomor Rekening a.n Syfanadya Wening Adi</p>
+              <div class="norek-copy">
+                <img src="assetspesanan/img/mandiri_logo.png" alt="Logo Bank Mandiri">
+                <input type="text" class="text" value="1310019525288">
+                <button><i class="bi bi-clipboard"></i></button>
+               </div>
+            </div>
           </div>
 
         </div>
@@ -227,6 +210,25 @@ require_once "config.php";
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
+  <script>
+    // NOREK COPY
+    let copyButtons = document.querySelectorAll(".norek-copy button");
+
+    copyButtons.forEach(function(button) {
+      button.addEventListener("click", function() {
+        let copyText = button.closest(".norek-copy");
+        let input = copyText.querySelector("input.text");
+        input.select();
+        document.execCommand("copy");
+        copyText.classList.add("active");
+        window.getSelection().removeAllRanges();
+        setTimeout(function() {
+          copyText.classList.remove("active");
+        }, 2500);
+      });
+    });
+
+  </script>
   <script src="assetspesanan/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assetspesanan/vendor/aos/aos.js"></script>
   <script src="assetspesanan/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

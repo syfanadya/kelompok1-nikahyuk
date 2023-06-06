@@ -20,8 +20,8 @@ include "ceklogin.php";
 
       <div class="navbar-nav-home">
         <a href="#katalog">Katalog</a>
-        <a href="buatpesanan.php">Pemesanan</a>
-        <a href="pembayaran.php">Pembayaran</a>
+        <a href="statuspesanan.php">Pemesanan</a>
+        <a href="submitbukti.php">Pembayaran</a>
         <a href="statuspemesanan.php">Status Pemesanan</a>
         <a href="#komentar">Komentar</a>
         <a href="#pertanyaan">Pertanyaan</a>

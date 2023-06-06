@@ -453,17 +453,19 @@ section {
 
 
 /*--------------------------------------------------------------
-# Portfolio Details
+# Pesanan Details, Pembayaran Details
 --------------------------------------------------------------*/
 .pesanan-details {
   padding-top: 40px;
 }
 
-.pesanan-details .pesanan-info {
+.pembayaran-details .pembayaran-info,
+.pesanan-details .pesanan-info{
   padding: 30px;
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
 }
 
+.pembayaran-details .pembayaran-info h3,
 .pesanan-details .pesanan-info h3 {
   font-size: 22px;
   font-weight: 700;
@@ -472,18 +474,21 @@ section {
   border-bottom: 2px solid #ffaabb;
 }
 
+.pembayaran-details .pembayaran-info ul,
 .pesanan-details .pesanan-info ul {
   list-style: none;
   padding: 0;
   font-size: 15px;
 }
-
+.pembayaran-details .pembayaran-info ul li+li,
 .pesanan-details .pesanan-info ul li+li {
   margin-top: 10px;
 }
+.pembayaran-details .pembayaran-info ul li a,
 .pesanan-details .pesanan-info ul li a {
   color: black;
 }
+.pembayaran-details .pembayaran-info ul li a:hover,
 .pesanan-details .pesanan-info ul li a:hover {
   color: #fb839e;
 }
@@ -548,23 +553,65 @@ section {
 /*--------------------------------------------------------------
 # Status Pesanan
 --------------------------------------------------------------*/
+
 .pesanan-details .status-info {
   padding: 30px;
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
 }
+
 .pesanan-details table{
   width: 100%;
-  border-collapse: collapse;
 }
-.pesanan-details table th {
-  text-align: left;
-  padding: 10px;
-  border: 2px solid #ffaabb;
-}
+
 .pesanan-details table td{
   padding: 10px;
   border: 2px solid #ffaabb;
 }
+
+/*--------------------------------------------------------------
+# rekening info
+--------------------------------------------------------------*/
+.pembayaran-details .rekening-info{
+  padding: 30px;
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+  background-color: #fb839e;
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+}
+
+.norek-copy {
+  position: relative;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+}
+.norek-copy img{
+  width: 10%;
+}
+.norek-copy input.text {
+  padding: 10px;
+  font-size: 16px;
+  color: #555555;
+  text-align: center;
+  border: none;
+  outline: none;
+  
+}.norek-copy button {
+  padding: 5px;
+  color: #555555;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background: #fff;
+  cursor: pointer;
+}
+.norek-copy button:active{
+  color: #fb839e;
+}
+
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
