@@ -3,7 +3,8 @@ include "ceklogin.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,31 +12,33 @@ include "ceklogin.php";
     <link rel="stylesheet" href="./cssdashboard/style.css" />
     <!-- font awesome css -->
     <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <link rel="shortcut icon" href="./asetdashboard/logo.png" type="image/x-icon" />
     <script src="https://unpkg.com/feather-icons"></script>
-  </head>
-  <body class="body-home-page">
+</head>
+
+<body class="body-home-page">
     <!-- navbar start -->
     <nav class="navbar">
-      <a href="#" class="navbar-logo"><img src="./asetdashboard/logo.png" alt="" /></a>
+        <a href="#" class="navbar-logo"><img src="./asetdashboard/logo.png" alt="" /></a>
 
-      <div class="navbar-nav-home">
-        <a href="#katalog">Katalog</a>
-        <a href="statuspesanan.php">Pemesanan</a>
-        <a href="submitbukti.php">Pembayaran</a>
-        <a href="statuspemesanan.php">Status Pemesanan</a>
-        <a href="#komentar">Komentar</a>
-        <a href="#pertanyaan">Pertanyaan</a>
-      </div>
+        <div class="navbar-nav-home">
+            <a href="#katalog">Katalog</a>
+            <a href="statuspesanan.php">Pemesanan</a>
+            <a href="submitbukti.php">Pembayaran</a>
+            <a href="statuspemesanan.php">Status Pemesanan</a>
+            <a href="#komentar">Komentar</a>
+            <a href="#pertanyaan">Pertanyaan</a>
+        </div>
 
-      <div class="navbar-extra-home">
-        <a href="profile.php">
-            PROFILE
-        </a>
-        <a href="logout.php">
-            LOGOUT
-        </a>
-        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
-      </div>
+        <div class="navbar-extra-home">
+            <a href="profile.php">
+                PROFILE
+            </a>
+            <a href="logout.php">
+                LOGOUT
+            </a>
+            <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+        </div>
     </nav>
     <!-- navbar end -->
 
@@ -43,14 +46,14 @@ include "ceklogin.php";
 
 
     <div class="home-text">
-      <pre class="pre1">
+        <pre class="pre1">
         Jadikan
         Momen Bahagiamu
         Lebih Spesial
         Dengan Undangan
         Pernikahan Digital !!
       </pre>
-      <pre class="pre2">
+        <pre class="pre2">
         Undangan pernikahan digital memungkinkan
         kamu untuk mengirim undangan ke seluruh
         dunia tanpa batasan jarak dan waktu.
@@ -59,67 +62,67 @@ include "ceklogin.php";
     </div>
 
     <section class="hero" id="home">
-      <main class="content">
-        <img class="img-home1" src="./asetdashboard/home-1.png" alt=""> 
-        <img class="img-home2" src="./asetdashboard/home-2.png" alt="">
-      </main>
+        <main class="content">
+            <img class="img-home1" src="./asetdashboard/home-1.png" alt="">
+            <img class="img-home2" src="./asetdashboard/home-2.png" alt="">
+        </main>
     </section>
 
 
 
     <!-- mengapa ny start -->
     <section id="mengapa" class="mengapa">
-      <div class="mengapa-slide">
-        <pre class="mengapa-pre1">
+        <div class="mengapa-slide">
+            <pre class="mengapa-pre1">
 Mengapa Menggunakan
 Undangan Digital
         </pre>
 
-        <img class="img-mengapa1" src="./asetdashboard/mengapa1.png" alt="">
-        <p class="mengapa-p1">Praktis</p>
-        <pre class="mengapa-pre2">
+            <img class="img-mengapa1" src="./asetdashboard/mengapa1.png" alt="">
+            <p class="mengapa-p1">Praktis</p>
+            <pre class="mengapa-pre2">
 Kamu dapat memesan undangan kapan saja dan di mana saja
 hanya melalui ponsel, dengan memasukkan data yang 
 diperlukan, dan undangan siap untuk dibagikan.
         </pre>
-      </div>
+        </div>
 
-<!-- ===================================================================== -->
+        <!-- ===================================================================== -->
 
-      <div class="mengapa-slide">
-        <pre class="mengapa-pre1">
+        <div class="mengapa-slide">
+            <pre class="mengapa-pre1">
 Mengapa Menggunakan 
 Undangan Digital
         </pre>
 
-        <img class="img-mengapa1" src="./asetdashboard/mengapa2.png" alt="">
-        <p class="mengapa-p1">Ramah Lingkungan </p>
-        <pre class="mengapa-pre2">
+            <img class="img-mengapa1" src="./asetdashboard/mengapa2.png" alt="">
+            <p class="mengapa-p1">Ramah Lingkungan </p>
+            <pre class="mengapa-pre2">
 Kamu bisa mengurangi limbah sampah plastik 
 dan kertas dengan menggunakan undangan 
 berbasis website.  
         </pre>
-      </div>
+        </div>
 
-<!-- ===================================================================== -->
+        <!-- ===================================================================== -->
 
-      <div class="mengapa-slide">
-        <pre class="mengapa-pre1">
+        <div class="mengapa-slide">
+            <pre class="mengapa-pre1">
 Mengapa Menggunakan
 Undangan Digital
         </pre>
 
-        <img class="img-mengapa1-slide3" src="./asetdashboard/mengapa3.png" alt="">
-        <p class="mengapa-p1">Hemat Biaya dan Waktu </p>
-        <pre class="mengapa-pre2">
+            <img class="img-mengapa1-slide3" src="./asetdashboard/mengapa3.png" alt="">
+            <p class="mengapa-p1">Hemat Biaya dan Waktu </p>
+            <pre class="mengapa-pre2">
 Undangan pernikahan digital memungkinkan kamu 
 untuk  mengirim undangan kepada tamu 
 undangan tanpa batas.  
         </pre>
-      </div>
-      
-      <button id="prevButton" class="prevButton"><img src="./asetdashboard/left2.png" alt=""></button>
-      <button id="nextButton" class="nextButton"><img src="./asetdashboard/right.png" alt=""></button> 
+        </div>
+
+        <button id="prevButton" class="prevButton"><img src="./asetdashboard/left2.png" alt=""></button>
+        <button id="nextButton" class="nextButton"><img src="./asetdashboard/right.png" alt=""></button>
 
     </section>
     <!-- mengapa ny end -->
@@ -129,66 +132,77 @@ undangan tanpa batas.
     <!-- katalog start -->
     <section id="katalog" class="katalog">
 
-      <div class="pembungkus">
-        <p class="katalog-text">Katalog Desain Undangan</p>
+        <div class="pembungkus">
+            <p class="katalog-text">Katalog Desain Undangan</p>
 
-    <div class="content">
-      <div class="container-katalog">
-        <p class="title-katalog">Classic</p>
-        <img class="img-katalog" src="./asetdashboard/des1.png" alt="">
-        <a class="target-katalog" href="#">LIHAT DETAIL</a>
-      </div>
-      <div class="container-katalog">
-        <p class="title-katalog"> Blue Flower</p>
-        <img class="img-katalog" src="./asetdashboard/des2.png" alt="">
-        <a class="target-katalog" href="#">LIHAT DETAIL</a>
-      </div>
-      <div class="container-katalog">
-        <p class="title-katalog">Golden</p>
-        <img class="img-katalog" src="./asetdashboard/des3.png" alt="">
-        <a class="target-katalog" href="#">LIHAT DETAIL</a>
-      </div>
-    </div>
-      </div>
-  </section>
-  <!-- katalog end -->
-   
+            <div class="content">
+                <div class="container-katalog">
+                    <p class="title-katalog">Classic</p>
+                    <img class="img-katalog" src="./asetdashboard/des1.png" alt="">
+                    <a class="target-katalog" href="desain1.html" target="_blank">LIHAT DETAIL</a>
+                </div>
+                <div class="container-katalog">
+                    <p class="title-katalog"> Blue Flower</p>
+                    <img class="img-katalog" src="./asetdashboard/des2.png" alt="">
+                    <a class="target-katalog" href="desain2.html" target="_blank">LIHAT DETAIL</a>
+                </div>
+                <div class="container-katalog">
+                    <p class="title-katalog">Golden</p>
+                    <img class="img-katalog" src="./asetdashboard/des3.png" alt="">
+                    <a class="target-katalog" href="desain3.html" target="_blank">LIHAT DETAIL</a>
+                </div>
+            </div>
+    </section>
+    <!-- katalog end -->
 
 
-  <!-- komentar start -->
-  <section id="komentar" class="komentar">
-    <div class="komen">
-      <p class="komen-title">Komentar</p>
-    </div>
-  </section>
-  <!-- komentar end -->
 
-  <!-- pertanyaan start -->
-  <section id="pertanyaan" class="pertanyaan">
-    <div class="tanya">
-      <p class="pertanyaan-title">Pertanyaan</p>
-      <div class="box">
-          <div class="box-pertanyaan"><p class="ditanya">Bagaimana cara memesan undangan ? </p>
-                                      <p class="jawab">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id ex ad repellendus saepe aut enim atque totam quam quibusdam, laborum fuga possimus neque quis adipisci!</p>
-          </div>
-          <div class="box-pertanyaan"><p class="ditanya">Apakah undangan dapat di revisi jika ada perubahan ? </p>
-                                      <p class="jawab">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id ex ad repellendus saepe aut enim atque totam quam quibusdam, laborum fuga possimus neque quis adipisci!</p>
-          </div>
-          <div class="box-pertanyaan"><p class="ditanya">Berapa lama masa aktif undangan website ? </p>
-                                      <p class="jawab">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id ex ad repellendus saepe aut enim atque totam quam quibusdam, laborum fuga possimus neque quis adipisci!</p>
-          </div>
-          <div class="box-pertanyaan"><p class="ditanya">Bagaimana  cara membagikan undangan kepada tamu undangan ? </p>
-                                      <p class="jawab">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id ex ad repellendus saepe aut enim atque totam quam quibusdam, laborum fuga possimus neque quis adipisci!</p>
-          </div>
-      </div>
-    </div>
-  </section>
-  <!-- pertanyaan end -->
+    <!-- komentar start -->
+    <section id="komentar" class="komentar">
+        <div class="komen">
+            <p class="komen-title">Komentar</p>
+        </div>
+    </section>
+    <!-- komentar end -->
 
-   <script>
+    <!-- pertanyaan start -->
+    <section id="pertanyaan" class="pertanyaan">
+        <div class="tanya">
+            <p class="pertanyaan-title">Pertanyaan</p>
+            <div class="box">
+                <div class="box-pertanyaan">
+                    <p class="ditanya">Bagaimana cara memesan undangan ? </p>
+                    <p class="jawab">Silahkan registrasi dan login terlebih dahulu, lalu lihat desain-desain
+                        menarik dikatalog , pilih salah satu lalu pesan akan diarahkan mengisi data-data,
+                        setelah mengirim data lakukan pembayaran yang sudah tertera, sesudah pembayaran sukses
+                        tunggu pesanan anda beberapa hari setelah pembayaran.
+                    </p>
+                </div>
+                <div class="box-pertanyaan">
+                    <p class="ditanya">Apakah undangan dapat di revisi jika ada perubahan ? </p>
+                    <p class="jawab">Ya, undangan bisa direvisi melalui chat customer servise/whatsapp tertera.</p>
+                </div>
+                <div class="box-pertanyaan">
+                    <p class="ditanya">Berapa lama masa aktif undangan website ? </p>
+                    <p class="jawab">Undangan website tetap aktif walaupun acara pernikahan sudah selesai, aktif 3-5
+                        tahun kedepan setelah pesanan undangan nikah digital selesai.</p>
+                </div>
+                <div class="box-pertanyaan">
+                    <p class="ditanya">Bagaimana cara membagikan undangan kepada tamu undangan ? </p>
+                    <p class="jawab">Sesudah pesanan undangan anda selesai kami akan mengirim berupa link website
+                        udangan digital yang dipesan, anda hanya menyebarkan link undangan pernikahan dengan handphone
+                        melalui media sosial seperti whatsapp, facebook, instagram, dll.</p>
+                </div>
+            </div>
+            <a href="#"><i data-feather="arrow-up"></i></a>
+        </div>
+    </section>
+    <!-- pertanyaan end -->
+
+    <script>
     feather.replace()
-  </script>
+    </script>
     <script src="./jsdashboard/script.js"></script>
-      
-  </body>
+</body>
+
 </html>

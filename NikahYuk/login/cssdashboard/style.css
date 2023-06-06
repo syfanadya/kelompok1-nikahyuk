@@ -26,11 +26,23 @@ html {
   left: 0;
   right: 0;
   z-index: 9999;
+  animation: slideLeft 0.6s ease forwards;
+  transition: background-color 0.5s ease;
+}
+
+.navbar-scrolled {
+  background-color: #fff;
+  border-bottom: 0.1px solid rgb(248, 224, 224);
 }
 
 .navbar .navbar-logo {
   margin-left: -3rem;
   cursor: default;
+}
+
+.navbar .navbar-logo img {
+  width: 70px;
+  height: 70px;
 }
 
 .navbar .navbar-nav {
@@ -43,6 +55,11 @@ html {
   text-decoration: none;
   font-size: 20px;
   margin: 0 1rem;
+  transition: 0.3s ease-in-out;
+}
+
+.navbar .navbar-nav a:hover {
+  color: #0f025f;
 }
 
 .navbar .navbar-extra a {
@@ -64,12 +81,13 @@ html {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-image: url("../aset/bg-home.png");
+  background-image: url("../asetdashboard/bg-home-removebg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
-  background-position: -15rem 0px;
+  background-position: -21rem 0px;
+  animation: slideRight 0.6s ease forwards;
 }
 
 #hamburger-menu {
@@ -79,6 +97,7 @@ html {
 .home-text {
   position: relative;
   margin-top: 12.5rem;
+  animation: slideRight 0.6s ease forwards;
 }
 
 .home-text .pre1 {
@@ -114,6 +133,9 @@ html {
   position: absolute;
   right: 4rem;
   bottom: 7rem;
+  opacity: 0;
+  animation: zoomIn 0.5s ease forwards, floatImage 4s ease-in-out infinite;
+  animation-delay: 1s, 2s;
 }
 
 /* ===== start mengapa ny =====*/
@@ -229,7 +251,7 @@ html {
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25),
     -5px -5px 5px rgba(0, 0, 0, 0.25);
   background-color: #ffffff;
-  margin: 1.5rem;
+  margin: 0 4rem;
   text-align: center;
   border-radius: 15px;
 }
@@ -257,6 +279,12 @@ html {
   background-color: #ff849c;
   padding: 0.8rem 2.7rem;
   border-radius: 2rem;
+  transition: 0.3s ease-in-out;
+}
+
+.katalog .content .container-katalog .target-katalog:hover {
+  background-color: #fddbe7;
+  color: #ff849c;
 }
 
 /* ===== end katalog */
@@ -297,6 +325,7 @@ html {
 .pertanyaan .tanya {
   width: 85%;
   height: 100%;
+  position: relative;
 }
 
 .pertanyaan .pertanyaan-title {
@@ -325,7 +354,7 @@ html {
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), -5px -5px 5px rgba(0, 0, 0, 0.2);
   margin: 1rem;
   overflow: hidden;
-  transition: height 0.5s ease-in-out;
+  transition: height 0.6s ease-in-out;
   padding-top: 20px;
 }
 .box-pertanyaan .ditanya {
@@ -344,7 +373,24 @@ html {
 }
 
 .box .box-pertanyaan:hover {
-  height: 100px;
+  height: 130px;
+}
+
+.tanya a {
+  color: #ff849c;
+  display: block;
+  margin-left: 80rem;
+  position: absolute;
+  bottom: 5rem;
+  padding: 2px 4px;
+  transition: 0.4s ease-in-out;
+}
+i[data-feather="arrow-up"] {
+  font-size: 244px; /* Ubah ukuran ikon sesuai kebutuhan Anda */
+}
+.tanya a:hover {
+  color: #0f025f;
+  background-color: #fddbe7;
 }
 
 /* homepage end */
@@ -379,6 +425,140 @@ div {
   float: left;
 }
 /* =======float bg */
+
+/* detail peesanan start*/
+.container1-create {
+  width: 50%;
+  height: 49.5rem;
+  position: relative;
+}
+
+.container1-create .iphone {
+  width: 900px;
+  height: 750px;
+  opacity: 0;
+  animation: zoomIn 0.5s ease forwards, floatImage 4s ease-in-out infinite;
+  animation-delay: 0.3s;
+}
+
+.container1-create .icon a img {
+  width: 21px;
+  height: 36px;
+  position: absolute;
+  bottom: 41rem;
+  left: 3rem;
+  z-index: 999999999999;
+  animation: slideTop 0.6s ease forwards;
+}
+
+.container2-create {
+  width: 50%;
+  height: 49.5rem;
+  text-align: center;
+  position: relative;
+}
+
+.container2-create .title,
+.deskripsi,
+.price,
+.price-diskon,
+.preview,
+.pesan {
+  font-family: "Inter", sans-serif;
+  animation: slideRight 0.8s ease forwards;
+}
+
+.container2-create .title {
+  font-weight: 700;
+  font-size: 64px;
+  color: #0f025f;
+  margin-top: 4rem;
+  margin-left: 8rem;
+  text-align: left;
+}
+
+.container2-create .deskripsi {
+  text-align: left;
+  font-weight: 300;
+  font-size: 24px;
+  color: #000000;
+  margin-left: 5rem;
+  margin-top: 2rem;
+}
+
+.container2-create .price,
+.price-diskon {
+  color: #000000;
+  font-weight: 600;
+}
+
+.container2-create .price {
+  font-size: 31px;
+  text-decoration: line-through #f60000;
+  margin-right: 20rem;
+  margin-top: 2rem;
+}
+
+.container2-create .price-diskon {
+  font-size: 40px;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+}
+
+.container2-create .preview,
+.pesan {
+  display: inline-block;
+  font-size: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 2rem;
+  margin: 0 1.3rem;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15), 5px 5px 5px rgba(0, 0, 0, 0.15);
+  animation: slideBottom 1s ease forwards;
+}
+
+.container2-create .preview {
+  background-color: #fff;
+  color: #0f025f;
+  border: 1px solid #0f025f;
+  padding: 8px 32px;
+  transition: 0.4s ease-in-out;
+}
+
+.container2-create .preview:hover {
+  color: #fff;
+  background-color: #ff849c;
+  border: none;
+}
+
+.container2-create .pesan {
+  color: #fff;
+  background-color: #ff849c;
+  padding: 8px 48px;
+}
+
+.container2-create .pesan:hover {
+  background-color: #fddbe7;
+  color: #0f025f;
+  border: 1px solid #0f025f;
+}
+
+.container2-create .line {
+  height: 49.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container2-create .line img {
+  display: inline-block;
+  position: absolute;
+  height: 720px;
+  width: 2px;
+  left: 0;
+  animation: slideLeft 2s ease forwards;
+}
+
+/* detail peesanan end*/
 
 /* media queries */
 
@@ -453,11 +633,137 @@ div {
   .navbar .navbar-nav-home a:hover::after {
     transform: scaleX(0.2);
   }
+
+  /* ======================================= */
+  .container1-create {
+    width: 100%; /* Mengubah lebar menjadi 100% */
+    height: auto; /* Mengubah tinggi menjadi otomatis */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container1-create .iphone {
+    width: 300px;
+    height: 300px;
+  }
+
+  .container1-create .icon a img {
+    bottom: 3rem; /* Mengubah posisi bottom */
+    left: 1rem; /* Mengubah posisi left */
+  }
+
+  .container2-create {
+    width: 100%; /* Mengubah lebar menjadi 100% */
+    height: auto; /* Mengubah tinggi menjadi otomatis */
+    text-align: center; /* Mengatur penempatan teks menjadi tengah */
+    padding: 2rem; /* Menambahkan padding */
+  }
+
+  .container2-create .title {
+    font-size: 2.5rem; /* Mengubah ukuran font judul */
+    margin-top: 2rem; /* Mengubah margin atas */
+    margin-left: -2px; /* Menghapus margin kiri */
+  }
+
+  .container2-create .deskripsi {
+    font-size: 1.3rem; /* Mengubah ukuran font deskripsi */
+    margin-left: 0; /* Menghapus margin kiri */
+    margin-top: 1rem; /* Mengubah margin atas */
+  }
+
+  .container2-create .price {
+    font-size: 1.8rem;
+  }
+
+  .container2-create .price-diskon {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .container2-create .preview,
+  .container2-create .pesan {
+    font-size: 1.5rem; /* Mengubah ukuran font tombol */
+    margin: 0 2.5rem; /* Mengubah margin */
+    padding: 1rem 3rem; /* Mengubah padding tombol */
+  }
+
+  .container2-create .line {
+    display: none;
+  }
 }
 
 /* mobile */
 @media (max-width: 450px) {
   html {
     font-size: 55%;
+  }
+}
+
+/* KEYFRAMES ANIMATION */
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideTop {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideBottom {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes floatImage {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-24px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
