@@ -1,8 +1,13 @@
+@media(min-width: 768px){
+    .header .nav{
+        display: block!important;
+    }
+}
 @media(max-width: 767px){
     .header .logo{
         padding: 8px 15px;
     }
-    .headerv.hamburger-btn{
+    .header .hamburger-btn{
         display: flex;
         margin-right: 15px;
     }
@@ -17,8 +22,21 @@
         display: block;
         margin-left: 0;
     }
-    .header .nav ul li a{
-       color: #555555; 
-       padding: 10px 0;
+    .header .nav ul li a {
+        color: #555555;
+        padding: 10px 0;
+    }
+    .home-section .home-content h1{
+        font-size: 60px;
+    }
+    .couple-section .couple{
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 0 15px;
+    }
+}
+@media(max-width : 574px){
+    .home-section .home-content h1{
+        font-size: 40px;
     }
 }

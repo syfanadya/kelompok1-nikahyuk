@@ -1,5 +1,6 @@
 <?php 
 include "ceklogin.php";
+require_once "config.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -71,9 +72,23 @@ include "ceklogin.php";
             </ul>
           </li>
 
-          <li class="dropdown"><a href="#"><span>Profile</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a href="#"><span><?php echo $_SESSION['username'] ?></span></a>
             <ul>
-              <li><a href="profile.php">Profile</a></li>
+              <li>
+                <a href="">
+                  <?php 
+                    $sql = "SELECT email FROM users WHERE username='{$_SESSION['username']}'";
+                    $result = mysqli_query($conn,$sql);
+                    if(mysqli_num_rows($result)>0){
+                        $row = mysqli_fetch_assoc($result);
+                        $email = $row['email'];
+                        echo $email;
+                    } else {
+                        echo "Username tidak ditemukan.";
+                    }
+                  ?>
+                </a>
+              </li>
               <li><a href="logout.php">Log-out</a></li>
             </ul>
           </li>
@@ -122,7 +137,6 @@ include "ceklogin.php";
             <table>
                 
                 <?php 
-                  require_once "config.php";
                   $sql ="SELECT 
                             id_pembayaran,  
                             tanggal,

@@ -5,11 +5,11 @@
   <title>Jongsuk & Yoona</title>
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <!-- font awesome css -->
-  <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
   <!-- main css -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <!-- responsive css -->
-  <link rel="stylesheet" type="text/css" href="css/responsive.css">
+  <link rel="stylesheet" type="text/css" href="./css/responsive.css">
   <!-- default skin -->
   <link rel="stylesheet" class="alternate-style" type="text/css" href="css/skins/pink.css">
   <style>

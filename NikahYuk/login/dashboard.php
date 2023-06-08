@@ -32,7 +32,7 @@ include "ceklogin.php";
 
         <div class="navbar-extra-home">
             <a href="profile.php">
-                PROFILE
+                <?php echo $_SESSION['username'] ?>
             </a>
             <a href="logout.php">
                 LOGOUT

@@ -21,6 +21,16 @@ $(window).on("load", function(){
 
 $(document).ready(function(){
 
+    // NAV TOGGLE
+    $(".hamburger-btn").click(function(){
+        $(".header .nav").slideToggle();
+    })
+    $(".header .nav a").click(function(){
+        if($(window).width() < 768) {
+            $(".header .nav").slideToggle();
+        }
+    })
+
     // FIXED HEADER
     $(window).scroll(function(){
         if($(this).scrollTop() > 100){
