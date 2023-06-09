@@ -22,10 +22,9 @@ include "ceklogin.php";
         <a href="#" class="navbar-logo"><img src="./asetdashboard/logo.png" alt="" /></a>
 
         <div class="navbar-nav-home">
+            <a href="#mengapa">Mengapa Ny</a>
             <a href="#katalog">Katalog</a>
             <a href="statuspesanan.php">Pemesanan</a>
-            <a href="submitbukti.php">Pembayaran</a>
-            <a href="statuspemesanan.php">Status Pemesanan</a>
             <a href="#komentar">Komentar</a>
             <a href="#pertanyaan">Pertanyaan</a>
         </div>
@@ -139,17 +138,17 @@ undangan tanpa batas.
                 <div class="container-katalog">
                     <p class="title-katalog">Classic</p>
                     <img class="img-katalog" src="./asetdashboard/des1.png" alt="">
-                    <a class="target-katalog" href="desain1.html" target="_blank">LIHAT DETAIL</a>
+                    <a class="target-katalog" href="./targetdesain/desain4.html">LIHAT DETAIL</a>
                 </div>
                 <div class="container-katalog">
                     <p class="title-katalog"> Blue Flower</p>
                     <img class="img-katalog" src="./asetdashboard/des2.png" alt="">
-                    <a class="target-katalog" href="desain2.html" target="_blank">LIHAT DETAIL</a>
+                    <a class="target-katalog" href="./targetdesain/desain5.html">LIHAT DETAIL</a>
                 </div>
                 <div class="container-katalog">
                     <p class="title-katalog">Golden</p>
                     <img class="img-katalog" src="./asetdashboard/des3.png" alt="">
-                    <a class="target-katalog" href="desain3.html" target="_blank">LIHAT DETAIL</a>
+                    <a class="target-katalog" href="./targetdesain/desain6.html">LIHAT DETAIL</a>
                 </div>
             </div>
     </section>

@@ -126,17 +126,17 @@ undangan tanpa batas.
                 <div class="container-katalog">
                     <p class="title-katalog">Classic</p>
                     <img class="img-katalog" src="./asetdashboard/des1.png" alt="">
-                    <a class="target-katalog" href="desain1.html" target="_blank">LIHAT DETAIL</a>
+                    <a class="target-katalog" href="./targetdesain/desain1.html">LIHAT DETAIL</a>
                 </div>
                 <div class="container-katalog">
                     <p class="title-katalog">Blue Flower</p>
                     <img class="img-katalog" src="./asetdashboard/des2.png" alt="">
-                    <a class="target-katalog" href="desain2.html" target="_blank">LIHAT DETAIL</a>
+                    <a class="target-katalog" href="./targetdesain/desain2.html">LIHAT DETAIL</a>
                 </div>
                 <div class="container-katalog">
                     <p class="title-katalog">Golden</p>
                     <img class="img-katalog" src="./asetdashboard/des3.png" alt="">
-                    <a class="target-katalog" href="desain3.html" target="_blank">LIHAT DETAIL</a>
+                    <a class="target-katalog" href="./targetdesain/desain3.html">LIHAT DETAIL</a>
                 </div>
             </div>
     </section>

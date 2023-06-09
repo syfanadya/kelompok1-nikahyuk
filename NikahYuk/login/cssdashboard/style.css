@@ -20,7 +20,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 7%;
+  padding: 0.2rem 7%;
   position: fixed;
   top: 0;
   left: 0;
@@ -31,7 +31,7 @@ html {
 }
 
 .navbar-scrolled {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.9);
   border-bottom: 0.1px solid rgb(248, 224, 224);
 }
 
@@ -151,8 +151,8 @@ html {
 
 .mengapa-slide {
   background-color: #ff849c;
-  width: 85%;
-  height: 75%;
+  width: 75%;
+  height: 70%;
   border-radius: 1.5rem;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25),
     -5px -5px 5px rgba(0, 0, 0, 0.25);
@@ -207,10 +207,10 @@ html {
 }
 
 .prevButton {
-  left: 13rem;
+  left: 15rem;
 }
 .nextButton {
-  right: 13rem;
+  right: 15rem;
 }
 
 /* ===== end mengapa ny */
@@ -397,16 +397,21 @@ i[data-feather="arrow-up"] {
 
 /* home start */
 
+.navbar .navbar-nav-home {
+  margin-right: 24rem;
+}
+
 .navbar .navbar-nav-home a {
   font-family: "Inter", sans-serif;
   color: #878787;
   text-decoration: none;
   font-size: 18px;
   margin: 0 1rem;
+  transition: 0.3s ease-in-out;
 }
 
-.navbar .navbar-nav-home {
-  margin-right: 9rem;
+.navbar .navbar-nav-home a:hover {
+  color: #0f025f;
 }
 
 .navbar-extra-home a {

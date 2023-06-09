@@ -68,19 +68,55 @@ if (isset($_POST['submit'])) {
                 <input type="email" placeholder="Email" name="email" value="<?php echo $email; ?>" required>
             </div>
             <div class="input-group">
-                <input type="password" placeholder="Password" name="password" value="<?php echo $_POST['password']; ?>"
-                    required>
+                <input type="password" placeholder="Password" name="password" id="password"
+                    value="<?php echo $_POST['password']; ?>" required>
+                <span class="toggle-password" onclick="togglePasswordVisibility()"><i class="fa fa-eye"></i></span>
             </div>
             <div class="input-group">
-                <input type="password" placeholder="Confirm Password" name="cpassword"
+                <input type="password" placeholder="Confirm Password" name="cpassword" id="cpassword"
                     value="<?php echo $_POST['cpassword']; ?>" required>
+                <span class="toggle-password2" onclick="toggleConfirmPasswordVisibility()"><i
+                        class="fa fa-eye"></i></span>
             </div>
+
             <div class="input-group">
                 <button name="submit" class="btn">Sign-Up</button>
             </div>
             <p class="login-register-text">Anda sudah punya akun? <a href="login.php">Login </a></p>
         </form>
     </div>
+    <script>
+    function togglePasswordVisibility() {
+        var passwordInput = document.getElementById("password");
+        var toggleIcon = document.querySelector(".toggle-password i");
+
+        if (passwordInput.type === "password") {
+            passwordInput.type = "text";
+            toggleIcon.classList.remove("fa-eye");
+            toggleIcon.classList.add("fa-eye-slash");
+        } else {
+            passwordInput.type = "password";
+            toggleIcon.classList.remove("fa-eye-slash");
+            toggleIcon.classList.add("fa-eye");
+        }
+    }
+
+    function toggleConfirmPasswordVisibility() {
+        var confirmPasswordInput = document.getElementById("cpassword");
+        var toggleIcon = document.querySelector(".toggle-password2 i");
+
+        if (confirmPasswordInput.type === "password") {
+            confirmPasswordInput.type = "text";
+            toggleIcon.classList.remove("fa-eye");
+            toggleIcon.classList.add("fa-eye-slash");
+        } else {
+            confirmPasswordInput.type = "password";
+            toggleIcon.classList.remove("fa-eye-slash");
+            toggleIcon.classList.add("fa-eye");
+        }
+    }
+    </script>
+
 </body>
 
 </html>
