@@ -53,27 +53,76 @@ if ($_FILES['foto_pengantin_wanita']['error'] == UPLOAD_ERR_OK) {
     }
 }
 
-// Unggah foto prewedding
-if ($_FILES['foto_prewedd']['error'] == UPLOAD_ERR_OK) {
-    $tmp_name = $_FILES['foto_prewedd']['tmp_name'];
-    $file_name = $_FILES['foto_prewedd']['name'];
+// Unggah foto prewedding 1
+if ($_FILES['foto_prewedd_satu']['error'] == UPLOAD_ERR_OK) {
+    $tmp_name = $_FILES['foto_prewedd_satu']['tmp_name'];
+    $file_name = $_FILES['foto_prewedd_satu']['name'];
     $destination = 'file_pesananuser/fotoprewedd/' . $file_name;
     if (move_uploaded_file($tmp_name, $destination)) {
         // File berhasil diupload dan disimpan di direktori yang ditentukan
-        $foto_prewedd_name = $file_name; // Simpan nama file dalam variabel yang sesuai
+        $foto_prewedd_satu_name = $file_name; // Simpan nama file dalam variabel yang sesuai
     } else {
         // Gagal mengunggah file
     }
 }
 
-// Unggah foto galeri
-if ($_FILES['foto_galeri']['error'] == UPLOAD_ERR_OK) {
-    $tmp_name = $_FILES['foto_galeri']['tmp_name'];
-    $file_name = $_FILES['foto_galeri']['name'];
+// Unggah foto prewedding 2
+if ($_FILES['foto_prewedd_dua']['error'] == UPLOAD_ERR_OK) {
+    $tmp_name = $_FILES['foto_prewedd_dua']['tmp_name'];
+    $file_name = $_FILES['foto_prewedd_dua']['name'];
+    $destination = 'file_pesananuser/fotoprewedd/' . $file_name;
+    if (move_uploaded_file($tmp_name, $destination)) {
+        // File berhasil diupload dan disimpan di direktori yang ditentukan
+        $foto_prewedd_dua_name = $file_name; // Simpan nama file dalam variabel yang sesuai
+    } else {
+        // Gagal mengunggah file
+    }
+}
+
+// Unggah foto galeri 1
+if ($_FILES['foto_galeri_satu']['error'] == UPLOAD_ERR_OK) {
+    $tmp_name = $_FILES['foto_galeri_satu']['tmp_name'];
+    $file_name = $_FILES['foto_galeri_satu']['name'];
     $destination = 'file_pesananuser/fotogaleri/' . $file_name;
     if (move_uploaded_file($tmp_name, $destination)) {
         // File berhasil diupload dan disimpan di direktori yang ditentukan
-        $foto_galeri_name = $file_name; // Simpan nama file dalam variabel yang sesuai
+        $foto_galeri_satu_name = $file_name; // Simpan nama file dalam variabel yang sesuai
+    } else {
+        // Gagal mengunggah file
+    }
+}
+// Unggah foto galeri 2
+if ($_FILES['foto_galeri_dua']['error'] == UPLOAD_ERR_OK) {
+    $tmp_name = $_FILES['foto_galeri_dua']['tmp_name'];
+    $file_name = $_FILES['foto_galeri_dua']['name'];
+    $destination = 'file_pesananuser/fotogaleri/' . $file_name;
+    if (move_uploaded_file($tmp_name, $destination)) {
+        // File berhasil diupload dan disimpan di direktori yang ditentukan
+        $foto_galeri_dua_name = $file_name; // Simpan nama file dalam variabel yang sesuai
+    } else {
+        // Gagal mengunggah file
+    }
+}
+// Unggah foto galeri 3
+if ($_FILES['foto_galeri_tiga']['error'] == UPLOAD_ERR_OK) {
+    $tmp_name = $_FILES['foto_galeri_tiga']['tmp_name'];
+    $file_name = $_FILES['foto_galeri_tiga']['name'];
+    $destination = 'file_pesananuser/fotogaleri/' . $file_name;
+    if (move_uploaded_file($tmp_name, $destination)) {
+        // File berhasil diupload dan disimpan di direktori yang ditentukan
+        $foto_galeri_tiga_name = $file_name; // Simpan nama file dalam variabel yang sesuai
+    } else {
+        // Gagal mengunggah file
+    }
+}
+// Unggah foto galeri 4
+if ($_FILES['foto_galeri_empat']['error'] == UPLOAD_ERR_OK) {
+    $tmp_name = $_FILES['foto_galeri_empat']['tmp_name'];
+    $file_name = $_FILES['foto_galeri_empat']['name'];
+    $destination = 'file_pesananuser/fotogaleri/' . $file_name;
+    if (move_uploaded_file($tmp_name, $destination)) {
+        // File berhasil diupload dan disimpan di direktori yang ditentukan
+        $foto_galeri_empat_name = $file_name; // Simpan nama file dalam variabel yang sesuai
     } else {
         // Gagal mengunggah file
     }
@@ -112,12 +161,16 @@ $sql =  "INSERT INTO pesanan (
             ayat_kitab_suci,
             foto_pengantin_pria,
             foto_pengantin_wanita,
-            foto_prewedd,
-            foto_galeri,
+            foto_prewedd_satu,
+            foto_galeri_satu,
             norek_pengantin_pria,
             norek_pengantin_wanita,
             lagu,
-            tanggal_pemesanan
+            tanggal_pemesanan,
+            foto_prewedd_dua,
+            foto_galeri_dua,
+            foto_galeri_tiga,
+            foto_galeri_empat
         ) VALUES (
             '$_SESSION[iduser]',
             '$_POST[desain]', 
@@ -134,17 +187,21 @@ $sql =  "INSERT INTO pesanan (
             '$_POST[ayat_kitab_suci]',
             '$foto_pengantin_pria_name',
             '$foto_pengantin_wanita_name',
-            '$foto_prewedd_name',
-            '$foto_galeri_name',
+            '$foto_prewedd_satu_name',
+            '$foto_galeri_satu_name',
             '$_POST[norek_pengantin_pria]',
             '$_POST[norek_pengantin_wanita]',
             '$_POST[lagu]',
-            NOW()
+            NOW(),
+            '$foto_prewedd_dua_name',
+            '$foto_galeri_dua_name',
+            '$foto_galeri_tiga_name',
+            '$foto_galeri_empat_name'
         )";
 
 // Jalankan query SQL dan beri tanggapan sesuai hasilnya
 if (mysqli_query($conn, $sql)) {
-    header("refresh:10;url=popupsukses.php");
+    header("refresh:3;url=popupsukses.php");
     echo "<p>Data berhasil disimpan.</p>";
 } else {
     echo "<p>Ups, data gagal disimpan:</p>";

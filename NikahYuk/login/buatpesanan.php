@@ -235,16 +235,35 @@ require_once "config.php";
               </div>     
 
               <div class="row">
-                <div class="input-group">
-                  <label>Foto Prewedding (Maksimal 3 Foto)</label>
-                  <input type="file"  name="foto_prewedd" class="input-control" multiple>
+                <div class="input-group w50">
+                  <label>Foto Prewedding 1</label>
+                  <input type="file"  name="foto_prewedd_satu" class="input-control">
+                </div>
+                <div class="input-group w50">
+                  <label>Foto Prewedding 2</label>
+                  <input type="file"  name="foto_prewedd_dua" class="input-control">
                 </div>
               </div>
 
               <div class="row">
-                <div class="input-group">
-                  <label>Foto Galeri (Maksimal 6 Foto)</label>
-                  <input type="file"  name="foto_galeri" class="input-control" multiple>
+                <div class="input-group w50">
+                  <label>Foto Galeri 1</label>
+                  <input type="file"  name="foto_galeri_satu" class="input-control">
+                </div>
+                <div class="input-group w50">
+                  <label>Foto Galeri 2</label>
+                  <input type="file"  name="foto_galeri_dua" class="input-control">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="input-group w50">
+                  <label>Foto Galeri 3</label>
+                  <input type="file"  name="foto_galeri_tiga" class="input-control">
+                </div>
+                <div class="input-group w50">
+                  <label>Foto Galeri 4</label>
+                  <input type="file"  name="foto_galeri_empat" class="input-control">
                 </div>
               </div>
 
