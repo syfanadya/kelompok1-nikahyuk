@@ -9,7 +9,7 @@ require_once "config.php";
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Submit Bukti Pembayaran</title>
+  <title>Tulis Komentar</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -56,7 +56,7 @@ require_once "config.php";
           <li><a class="nav-link scrollto" href="dashboard.php#katalog">Katalog</a></li>
           <li class="dropdown"><a href="dashboard.php#komentar"><span>Komentar</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="tuliskomentar.php">Tulis Komentar</a></li>
+              <li><a href="#">Tulis Komentar</a></li>
             </ul>
           </li>
           <li><a class="nav-link scrollto" href="dashboard.php#pertanyaan">Pertanyaan</a></li>
@@ -112,10 +112,10 @@ require_once "config.php";
 
         <ol>
           <li><a href="index.html">Beranda</a></li>
-          <li>Pembayaran</li>
-          <li>Upload Bukti Pembayaran</li>
+          <li>Komentar</li>
+          <li>Tulis Komentar</li>
         </ol>
-        <h2>Upload Bukti Pembayaran</h2>
+        <h2>Tulis Komentar</h2>
 
       </div>
     </section><!-- End Breadcrumbs -->
@@ -127,11 +127,10 @@ require_once "config.php";
 
           <div class="col-lg-4">
             <div class="pesanan-info">
-              <h3>Detail Pembayaran</h3>
+              <h3>Detail</h3>
               <ul>
-                <li><a href="inforekening.php"><b>Info Rekening</b></a></li>
-                <li><a href="submitbukti.php"><b>Upload Bukti Pembayaran</b></a></li>
-                <li><a href="statuspembayaran.php"><b>Status Pembayaran</b></a></li>
+                <li><a href="inforekening.php"><b>Semua Komentar</b></a></li>
+                <li><a href="tuliskomentar.php"><b>Tulis Komentar</b></a></li>
               </ul>
             </div> 
           </div>
@@ -140,17 +139,23 @@ require_once "config.php";
           <div class="col-lg-8">
 
             <div class="pesanan-form">
-            <form enctype="multipart/form-data" class="form" action="prosespembayaran.php" method="POST">    
+            <form enctype="multipart/form-data" action="proseskomen.php" class="form" method="POST">    
               <div class="row">
                   <div class="input-group">
-                    <label>Kirim bukti pembayaran</label>
-                    <input type="file"  name="bukti_pembayaran" class="input-control">
+                    <label>Nama</label>
+                    <input type="text" class="input-control" name="nama">
                   </div>
                 </div>
+                <div class="row">
+                <div class="input-group">
+                  <label>Komentar</label>
+                  <textarea class="input-control" name="komentar"></textarea>
+                </div>
+              </div>
 
                 <div class="row">
                   <div class="input-group">
-                    <button type="submit" class="btn-1">Kirim</button>
+                  <button type="submit" class="btn-1">Kirim</button>
                   </div>
                 </div>
               </form>
