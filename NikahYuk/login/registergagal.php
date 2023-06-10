@@ -30,16 +30,13 @@ if (isset($_POST['submit'])) {
                 $_POST['password'] = "";
                 $_POST['cpassword'] = "";
             } else {
-                header("refresh:0;url=registergagal.php");
                 // echo "<script>alert('Woops! Terjadi kesalahan.')</script>";
             }
         } else {
-            header("refresh:0;url=registergagal.php");
             // echo "<script>alert('Woops! Email Sudah Terdaftar.')</script>";
         }
          
     } else {
-        header("refresh:0;url=registergagal.php");
         // echo "<script>alert('Password Tidak Sesuai')</script>";
     }
 }
@@ -86,6 +83,8 @@ if (isset($_POST['submit'])) {
                 <button name="submit" class="btn">Sign-Up</button>
             </div>
             <p class="login-register-text">Anda sudah punya akun? <a href="login.php">Login </a></p>
+            <p style="color: red; margin-top: 1rem;">Email atau Password yang anda masukkan tidak sesuai silahkan cek
+                ulang</p>
         </form>
     </div>
     <script>
