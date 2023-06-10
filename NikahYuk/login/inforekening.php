@@ -56,7 +56,8 @@ require_once "config.php";
           <li><a class="nav-link scrollto" href="dashboard.php#katalog">Katalog</a></li>
           <li class="dropdown"><a href="dashboard.php#komentar"><span>Komentar</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="tuliskomentar.php">Tulis Komentar</a></li>
+                <li><a href="semuakomentar.php"><b>Semua Komentar</b></a></li>
+                <li><a href="tuliskomentar.php"><b>Tulis Komentar</b></a></li>
             </ul>
           </li>
           <li><a class="nav-link scrollto" href="#dashboard.php#pertanyaan">Pertanyaan</a></li>
