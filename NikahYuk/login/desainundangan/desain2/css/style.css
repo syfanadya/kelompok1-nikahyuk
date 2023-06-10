@@ -1,0 +1,1024 @@
+@import url("https://fonts.googleapis.com/css2?family=Italiana&family=Sacramento&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 200rem;
+}
+
+.hero,
+.slide2,
+.slide3,
+.slide4,
+.slide5,
+.slide6,
+.slide7,
+.slide8 {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("../aset/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content .kiriatas,
+.slide2 .kiriatas,
+.slide4 .kiriatas,
+.slide6 .kiriatas,
+.slide7 .kiriatas,
+.slide8 .kiriatas {
+  width: 220px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: slideLeft 0.8s ease forwards;
+}
+
+.content .kiritengah {
+  bottom: 15rem;
+}
+
+.content .kiritengah,
+.slide2 .kiritengah,
+.slide4 .kiritengah,
+.slide6 .kiritengah,
+.slide7 .kiritengah,
+.slide8 .kiritengah {
+  width: 180px;
+  height: 270px;
+  position: absolute;
+  left: 0;
+  animation: slideLeft 0.8s ease forwards;
+}
+
+.content .kiribawah,
+.slide2 .kiribawah,
+.slide4 .kiribawah,
+.slide6 .kiribawah,
+.slide7 .kiribawah,
+.slide8 .kiribawah {
+  width: 276px;
+  height: 179px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  animation: slideLeft 0.8s ease forwards;
+}
+
+.content .tengahatas,
+.slide2 .tengahatas,
+.slide4 .tengahatas,
+.slide6 .tengahatas,
+.slide7 .tengahatas,
+.slide8 .tengahatas {
+  width: 275px;
+  height: 128px;
+  position: absolute;
+  top: 0;
+  right: 15rem;
+  animation: slideBottom 0.8s ease forwards;
+}
+
+.content .kananatas,
+.slide2 .kananatas,
+.slide4 .kananatas,
+.slide6 .kananatas,
+.slide7 .kananatas,
+.slide8 .kananatas {
+  width: 245px;
+  height: 192px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  animation: slideRight 0.8s ease forwards;
+}
+
+.content .kanantengah,
+.slide2 .kanantengah,
+.slide4 .kanantengah,
+.slide6 .kanantengah,
+.slide7 .kanantengah,
+.slide8 .kanantengah {
+  width: 230px;
+  height: 316px;
+  position: absolute;
+  right: 0;
+  top: 14rem;
+  animation: slideRight 0.8s ease forwards;
+}
+.content .kananbawah,
+.slide2 .kananbawah,
+.slide4 .kananbawah,
+.slide6 .kananbawah,
+.slide7 .kananbawah,
+.slide8 .kananbawah {
+  width: 300px;
+  height: 180px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  animation: slideRight 0.8s ease forwards;
+}
+
+.content .prewed {
+  width: 300px;
+  height: 300px;
+  display: block;
+  margin: auto;
+  margin-bottom: 2rem;
+  transition: 0.3s ease-in-out;
+  animation: slideBottom 0.8s ease forwards;
+}
+
+.content .prewed:hover {
+  width: 320px;
+  height: 320px;
+}
+
+.content .text {
+  margin-bottom: 10rem;
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+.content .slide1-h1,
+.slide1-p1,
+.slide1-p2 {
+  text-align: center;
+}
+
+.content .slide1-h1 {
+  font-family: "Italiana", serif;
+  font-weight: 400;
+  font-size: 60px;
+  margin-bottom: 1rem;
+  word-spacing: 5rem;
+  animation: slideRight 0.8s ease forwards;
+}
+
+.content .slide1-p1,
+.slide1-p2 {
+  font-family: "Inria Serif", serif;
+  font-weight: 300;
+  font-size: 28px;
+  animation: slideLeft 0.8s ease forwards;
+}
+
+.content .open {
+  text-decoration: none;
+  font-family: "Italiana", serif;
+  font-weight: 100;
+  font-size: 24px;
+  color: #fff;
+  background-color: #0a405e;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  display: inline-block;
+  margin-top: 2rem;
+  transition: 0.3s ease-in;
+  animation: slideTop 0.8s ease forwards;
+}
+
+.content .open:hover {
+  background-color: #93b9d8;
+}
+
+/* ========================================================== */
+
+/* slide 2 */
+
+.slide2 {
+  width: 100%;
+  height: 24.7%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  /* background-color: #ff849c; */
+}
+
+.slide-two {
+  width: 85%;
+  height: 100%;
+  /* background-color: #ffd6d6; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.slide-two .slide2-p1,
+.slide2-p2,
+.slide2-p3,
+.slide2-p4 {
+  font-family: "Inria Serif", serif;
+  font-weight: 400;
+}
+
+.slide-two .slide2-p1 {
+  font-size: 30px;
+}
+
+.slide-two .slide2-p2 {
+  font-size: 25px;
+  margin-top: 4rem;
+}
+
+.slide-two .slide2-p3,
+.slide2-p4 {
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.slide-two .slide2-h1 {
+  font-size: 60px;
+  margin-top: 2rem;
+  word-spacing: 5rem;
+}
+
+.slide-two .slide2-h3 {
+  font-size: 50px;
+  margin-bottom: 1rem;
+  word-spacing: 1rem;
+  margin-top: 2rem;
+}
+/*  */
+.slide3 {
+  width: 100%;
+  height: 24.7%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #ff849c; */
+}
+
+/* ========================================================== */
+
+/* slide  3*/
+
+.slide3 {
+  width: 100%;
+  height: 24.7%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide-three {
+  width: 85%;
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-color: red; */
+}
+
+.slide-three h1 {
+  font-family: "Italiana", serif;
+  font-weight: 400;
+  font-size: 60px;
+}
+
+.slide-three2 {
+  width: 100%;
+  height: 75%;
+  display: flex;
+  /* flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+  /* background-color: aqua; */
+}
+
+.slide-three2 .pria,
+.wanita {
+  width: 40%;
+  height: 100%;
+  /* background: #ffd6d6; */
+}
+
+.slide-three2 .love {
+  width: 20%;
+  height: 100%;
+}
+
+.slide-three2 .pria,
+.love,
+.wanita {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide-three2 .pria,
+.wanita {
+  width: 40%;
+  height: 100%;
+  /* background: #ffd6d6; */
+}
+
+.slide-three2 .pria img,
+.slide-three2 .wanita img {
+  width: 350px;
+  height: 350px;
+  margin-top: -4rem;
+}
+
+.slide-three2 .love img {
+  width: 170px;
+  height: 150px;
+  margin-top: -12rem;
+}
+
+.pria .text1,
+.wanita .text1 {
+  font-family: "Italiana", serif;
+  font-weight: 400;
+  font-size: 40px;
+  margin-top: 0.8rem;
+  margin-bottom: 1.3rem;
+}
+.pria .text2,
+.wanita .text2 {
+  font-family: "Inria Serif", serif;
+  font-weight: 300;
+  font-size: 30px;
+}
+
+/* ========================================================== */
+.slide4 {
+  width: 100%;
+  height: 24.7%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.kitab {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.kitab .ayat,
+.isi {
+  font-family: "Inria Serif", serif;
+  font-weight: 300;
+}
+
+.kitab .ayat {
+  font-size: 35px;
+  margin-top: -10rem;
+}
+
+.kitab .isii {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.kitab .isi {
+  font-size: 25px;
+}
+/* ====================== */
+.slide5 {
+  width: 100%;
+  height: 24.7%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  width: 100%;
+  height: 20%;
+  background-color: aqua;
+  text-align: center;
+}
+
+.title h1 {
+  margin-bottom: 40rem;
+  font-family: "Italiana", serif;
+  font-weight: 400;
+  font-size: 100px;
+}
+
+.slide5 .galeri {
+  width: 100%;
+  height: 80%;
+  background-color: #ff849c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.galeri img {
+  margin: 0 1.5rem;
+  width: 300px;
+  height: 450px;
+}
+/* ================= */
+
+.slide6 {
+  width: 100%;
+  height: 24.7%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide6 h1 {
+  font-family: "Italiana", serif;
+  font-weight: 400;
+  font-size: 100px;
+}
+
+.resep {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon1,
+.icon2,
+.icon3 {
+  width: 20%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1px;
+}
+
+.icon1 img,
+.icon2 img,
+.icon3 img {
+  width: 150px;
+  height: 150px;
+}
+
+.icon1 img,
+.icon3 img {
+  margin-top: -10rem;
+}
+
+.icon2 img {
+  margin-top: 12rem;
+}
+
+.icon1 p,
+.icon2 p,
+.icon3 p {
+  font-family: "Inria Serif", serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.icon1 p,
+.icon3 p {
+  margin-top: 2rem;
+}
+
+/* ============================ */
+.slide7 {
+  width: 100%;
+  height: 24.7%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide7 h1 {
+  font-family: "Italiana", serif;
+  font-weight: 400;
+  font-size: 100px;
+  margin-bottom: 3rem;
+}
+
+.kiasan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.kiasan p {
+  font-family: "Inria Serif", serif;
+  font-weight: 300;
+  font-size: 25px;
+}
+
+.money {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bank1,
+.bank2 {
+  width: 20%;
+  height: 100%;
+  margin: 0 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.bank1 p,
+.bank2 p {
+  font-family: "Inria Serif", serif;
+  font-weight: 300;
+  font-size: 25px;
+}
+
+.copy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.copy p {
+  margin-right: 5px;
+}
+
+.copy button {
+  cursor: pointer;
+  margin-right: -4rem;
+  border: none;
+  transition: 0.5s ease-in-out;
+}
+
+.copy button:hover {
+  border: 0.1px solid #ff849c;
+}
+
+/* ============================ */
+.slide8 {
+  width: 100%;
+  height: 24.7%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.slide8 p {
+  font-family: "Italiana", serif;
+  font-weight: 300;
+  font-size: 30px;
+  margin-top: -5rem;
+}
+
+.slide8 h1 {
+  font-family: "Italiana", serif;
+  font-weight: 400;
+  font-size: 70px;
+  margin-bottom: 1rem;
+  word-spacing: 5rem;
+  margin-top: 3rem;
+}
+
+.slide8 a {
+  color: #ff849c;
+  display: block;
+  margin-left: 80rem;
+  position: absolute;
+  bottom: 5rem;
+  padding: 2px 4px;
+  transition: 0.4s ease-in-out;
+}
+i[data-feather="arrow-up"] {
+  font-size: 244px; /* Ubah ukuran ikon sesuai kebutuhan Anda */
+}
+.slide8 a:hover {
+  background-color: #93b9d8;
+}
+
+/* ======================== */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+  .content .kiriatas,
+  .slide2 .kiriatas,
+  .slide4 .kiriatas,
+  .slide6 .kiriatas,
+  .slide7 .kiriatas,
+  .slide8 .kiriatas {
+    width: 120px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .content .kiritengah {
+    bottom: 20rem;
+  }
+
+  .content .kiritengah,
+  .slide2 .kiritengah,
+  .slide4 .kiritengah,
+  .slide6 .kiritengah,
+  .slide7 .kiritengah,
+  .slide8 .kiritengah {
+    width: 120px;
+    height: 200px;
+    position: absolute;
+    left: 0;
+  }
+
+  .content .kiribawah,
+  .slide2 .kiribawah,
+  .slide4 .kiribawah,
+  .slide6 .kiribawah,
+  .slide7 .kiribawah,
+  .slide8 .kiribawah {
+    width: 176px;
+    height: 109px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  .content .tengahatas,
+  .slide2 .tengahatas,
+  .slide4 .tengahatas,
+  .slide6 .tengahatas,
+  .slide7 .tengahatas,
+  .slide8 .tengahatas {
+    width: 175px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    right: 15rem;
+  }
+
+  .content .kananatas,
+  .slide2 .kananatas,
+  .slide4 .kananatas,
+  .slide6 .kananatas,
+  .slide7 .kananatas,
+  .slide8 .kananatas {
+    width: 165px;
+    height: 102px;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .content .kanantengah,
+  .slide2 .kanantengah,
+  .slide4 .kanantengah,
+  .slide6 .kanantengah,
+  .slide7 .kanantengah,
+  .slide8 .kanantengah {
+    width: 140px;
+    height: 190px;
+    position: absolute;
+    right: 0;
+    top: 14rem;
+  }
+  .content .kananbawah,
+  .slide2 .kananbawah,
+  .slide4 .kananbawah,
+  .slide6 .kananbawah,
+  .slide7 .kananbawah,
+  .slide8 .kananbawah {
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .content .prewed {
+    width: 250px;
+    height: 250px;
+  }
+  .content .prewed:hover {
+    width: 260px;
+    height: 260px;
+  }
+  .content .slide1-h1 {
+    font-size: 30px;
+  }
+
+  .content .slide1-p1,
+  .slide1-p2 {
+    font-size: 16px;
+  }
+
+  .content .open {
+    font-size: 20px;
+  }
+  /* ===================== */
+
+  .slide-two .slide2-p1 {
+    font-size: 18px;
+  }
+
+  .slide-two .slide2-p2 {
+    font-size: 15px;
+  }
+
+  .slide-two .slide2-p3,
+  .slide2-p4 {
+    font-size: 15px;
+  }
+
+  .slide-two .slide2-h1 {
+    font-size: 30px;
+  }
+
+  .slide-two .slide2-h3 {
+    font-size: 30px;
+  }
+  /* ========================== */
+  .slide-three h1 {
+    font-size: 40px;
+  }
+
+  .slide3 {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+  }
+
+  .slide-three {
+    width: 85%;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+  }
+
+  .slide-three2 {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aqua; */
+  }
+
+  .slide-three2 .pria,
+  .wanita {
+    width: 40%;
+    height: 100%;
+    /* background: #ffd6d6; */
+  }
+
+  .slide-three2 .love {
+    width: 20%;
+    height: 100%;
+  }
+
+  .slide-three2 .pria,
+  .love,
+  .wanita {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .slide-three2 .pria,
+  .wanita {
+    width: 40%;
+    height: 100%;
+    /* background: #ffd6d6; */
+  }
+
+  .slide-three2 .love {
+    width: 20%;
+    height: 100%;
+  }
+
+  .slide-three2 .pria,
+  .love,
+  .wanita {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .slide-three2 .pria,
+  .wanita {
+    width: 100%;
+    height: 100%;
+    /* background: #ffd6d6; */
+  }
+
+  .slide-three2 .love {
+    width: 100%;
+    height: 10%;
+    /* background-color: #0f025f; */
+  }
+
+  .slide-three2 .pria img,
+  .slide-three2 .wanita img {
+    width: 200px;
+    height: 200px;
+    margin-top: -4rem;
+  }
+
+  .slide-three2 .love img {
+    width: 100px;
+    height: 80px;
+    margin-top: -2rem;
+  }
+
+  .pria .text1,
+  .wanita .text1 {
+    font-size: 20px;
+    margin-top: 0.8rem;
+    margin-bottom: 1.3rem;
+  }
+  .pria .text2,
+  .wanita .text2 {
+    font-size: 13px;
+  }
+  /* =========================== */
+  .kitab {
+    width: 90%;
+  }
+  .kitab .ayat {
+    font-size: 20px;
+  }
+  .kitab .isi {
+    font-size: 13px;
+  }
+  /* =================================================== */
+
+  /* =================================================== */
+  .slide6 h1 {
+    font-size: 30px;
+  }
+  .resep {
+    height: 60%;
+    /* background-color: #0f025f; */
+  }
+  .icon1,
+  .icon2,
+  .icon3 {
+    width: 50%;
+    height: 80%;
+    /* background-color: #0f025f; */
+  }
+  .icon1 img,
+  .icon2 img,
+  .icon3 img {
+    width: 80px;
+    height: 80px;
+  }
+  .icon1 p,
+  .icon2 p,
+  .icon3 p {
+    font-size: 9px;
+  }
+  /* ====================================== */
+  .slide7 {
+    width: 100%;
+    height: 24.7%;
+  }
+  .slide7 h1 {
+    font-size: 50px;
+  }
+  .kiasan {
+    width: 90%;
+  }
+  .kiasan p {
+    font-size: 13px;
+  }
+  .bank1,
+  .bank2 {
+    width: 30%;
+    height: 100%;
+    /* background-color: #0f025f; */
+  }
+  .bank1 img,
+  .bank2 img {
+    width: 120px;
+    height: 120px;
+  }
+  .bank1 p,
+  .bank2 p {
+    font-size: 15px;
+  }
+  .copy button img {
+    width: 10px;
+    height: 10px;
+  }
+
+  /* ====================================== */
+  .slide8 p {
+    font-size: 25px;
+  }
+  .slide8 h1 {
+    font-size: 50px;
+  }
+  .slide8 a {
+    right: 5rem;
+  }
+}
+
+/* mobile */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideTop {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideBottom {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
