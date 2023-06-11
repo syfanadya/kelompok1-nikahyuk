@@ -33,6 +33,22 @@ body {
   justify-content: center;
 }
 
+/* .content .ataskiri,
+.bawahkanan {
+  position: absolute;
+  width: 150px;
+  height: 200px;
+  z-index: 99999999999999999999999999999;
+}
+
+.content .ataskiri {
+}
+
+.content .bawahkanan {
+  right: 38rem;
+  bottom: 20rem;
+} */
+
 .content .left-bg,
 .right-bg,
 .slide2 .left-bg,
@@ -355,7 +371,6 @@ body {
 .title {
   width: 100%;
   height: 20%;
-  background-color: aqua;
   text-align: center;
 }
 
@@ -366,20 +381,48 @@ body {
   font-size: 100px;
 }
 
-.slide5 .galeri {
+.slide5 .galeri1 {
   width: 100%;
   height: 80%;
-  background-color: #ff849c;
+  /* background-color: #ff849c; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.slide5 .galeri2 {
+  width: 100%;
+  height: 80%;
+  /* background-color: #93b9d8; */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.galeri img {
-  margin: 0 1.5rem;
-  width: 300px;
-  height: 450px;
+.galeri1 img,
+.galeri2 img {
+  width: 350px;
+  height: 240px;
+  margin: 0 1rem;
+  border: 10px solid rgba(97, 217, 255, 0.3);
+  transition: 1s ease-in-out;
 }
+
+.galeri1 img {
+  margin-bottom: -3rem;
+}
+
+.galeri2 img {
+  margin-top: -3rem;
+}
+
+.galeri1 img:hover,
+.galeri2 img:hover {
+  width: 340px;
+  height: 225px;
+}
+
 /* ================= */
 
 .slide6 {
@@ -664,7 +707,7 @@ i[data-feather="arrow-up"] {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: aqua;
+    /* background-color: aqua; */
   }
 
   .slide-three {
@@ -776,7 +819,53 @@ i[data-feather="arrow-up"] {
     font-size: 13px;
   }
   /* =================================================== */
+  .slide5 {
+    width: 100%;
+    height: 100%;
+  }
+  .title {
+    height: 15%;
+    /* background-color: aqua; */
+  }
+  .title h1 {
+    margin-bottom: 40rem;
+    font-family: "Italiana", serif;
+    font-weight: 400;
+    font-size: 50px;
+    margin-top: 4rem;
+  }
+  .slide5 .galeri1 {
+    width: 100%;
+    height: 80%;
+    /* background-color: #ff849c; */
+    flex-direction: column;
+    margin-top: -25rem;
+  }
+  .slide5 .galeri2 {
+    width: 100%;
+    height: 80%;
+    /* background-color: #93b9d8; */
+    flex-direction: column;
+  }
 
+  .galeri1 img,
+  .galeri2 img {
+    margin: 4rem 0;
+  }
+
+  .galeri1 img {
+    margin-bottom: -3rem;
+  }
+
+  .galeri2 img {
+    margin-top: -3rem;
+  }
+
+  .galeri1 img:hover,
+  .galeri2 img:hover {
+    width: 340px;
+    height: 225px;
+  }
   /* =================================================== */
   .slide6 h1 {
     font-size: 30px;
