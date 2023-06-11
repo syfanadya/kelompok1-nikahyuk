@@ -30,14 +30,17 @@ if (isset($_POST['submit'])) {
                 $_POST['password'] = "";
                 $_POST['cpassword'] = "";
             } else {
-                echo "<script>alert('Woops! Terjadi kesalahan.')</script>";
+                header("refresh:0;url=registergagal.php");
+                // echo "<script>alert('Woops! Terjadi kesalahan.')</script>";
             }
         } else {
-            echo "<script>alert('Woops! Email Sudah Terdaftar.')</script>";
+            header("refresh:0;url=registergagal.php");
+            // echo "<script>alert('Woops! Email Sudah Terdaftar.')</script>";
         }
          
     } else {
-        echo "<script>alert('Password Tidak Sesuai')</script>";
+        header("refresh:0;url=registergagal.php");
+        // echo "<script>alert('Password Tidak Sesuai')</script>";
     }
 }
  
