@@ -136,7 +136,7 @@
         align-items: center;
         justify-content: center;
         transition: all 0.5s ease;
-        /* display: none; */
+        display: none;
         
     }
     .header.fixed .hamburger-btn{

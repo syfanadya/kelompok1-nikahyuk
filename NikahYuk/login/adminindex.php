@@ -61,8 +61,8 @@
                                 pesanan.ayat_kitab_suci,
                                 pesanan.foto_pengantin_pria,
                                 pesanan.foto_pengantin_wanita,
-                                pesanan.foto_prewedd,
-                                pesanan.foto_galeri,
+                                pesanan.foto_prewedd_satu,
+                                pesanan.foto_galeri_satu,
                                 pesanan.norek_pengantin_pria,
                                 pesanan.norek_pengantin_wanita,
                                 pesanan.lagu,
@@ -70,7 +70,11 @@
                                 pembayaran.tanggal,
                                 pembayaran.bukti_pembayaran,
                                 pembayaran.status_pembayaran,
-                                pembayaran.id_pembayaran
+                                pembayaran.id_pembayaran,
+                                pesanan.foto_prewedd_dua,
+                                pesanan.foto_galeri_tiga,
+                                pesanan.foto_galeri_empat,
+                                pesanan.linkundangan
                 FROM users
                 JOIN pesanan ON users.id = pesanan.iduser
                 JOIN pembayaran ON users.id = pembayaran.iduser
@@ -100,8 +104,8 @@
                                     <b>Ayat Kitab Suci : </b><?php echo $row[14];?><br/>
                                     <b>Foto Pengantin Pria : </b><?php echo $row[15];?><br/>
                                     <b>Foto Pengantin Wanita : </b><?php echo $row[16];?><br/>
-                                    <b>Foto Prewedd : </b><?php echo $row[17];?><br/>
-                                    <b>Foto Galeri : </b><?php echo $row[18];?><br/>
+                                    <b>Foto Prewedd : </b><?php echo $row[17];?> <?php echo $row[27];?><br/>
+                                    <b>Foto Galeri : </b><?php echo $row[18];?> <?php echo $row[28];?> <?php echo $row[29];?><br/>
                                     <b>Norek Pengantin Pria : </b><?php echo $row[19];?><br/>
                                     <b>Norek Pengantin Wanita : </b><?php echo $row[20];?><br/>
                                     <b>Lagu : </b><?php echo $row[21];?>
@@ -113,7 +117,8 @@
                                     <a href="editstatuspembayaran.php?id=<?php echo $row[26]; ?>" class="edit">Edit</a>
                                 </td>
                                 <td>
-                                    <?php echo $row[22]?>
+                                    <b>Status Pesanan :</b><?php echo $row[22]?><br/>
+                                    <b>Link Undangan :</b><?php echo $row[30]?>
                                     <a href="editstatuspesanan.php?id=<?php echo $row[2]; ?>" class="edit">Edit</a>
                                 </td>
                             </tr>

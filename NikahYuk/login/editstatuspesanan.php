@@ -26,6 +26,10 @@
         </select>
         <br />
         <br />
+        <label for="linkundangan">Link Undangan :</label>
+        <input name="linkundangan" id="linkundangan">
+        <br />
+        <br />
         <br />
         <br />
 

@@ -141,7 +141,7 @@ require_once "config.php";
           <div class="col-lg-8">
             <div class="rekening-info">
               <h3>Lakukan Pembayaran</h3>
-              <h4><b>Rp. 250.000</b></h4>
+              <h4><b>Rp. 200.000</b></h4>
               <p>Nomor Rekening a.n Syfanadya Wening Adi</p>
               <div class="norek-copy">
                 <img src="assetspesanan/img/mandiri_logo.png" alt="Logo Bank Mandiri">

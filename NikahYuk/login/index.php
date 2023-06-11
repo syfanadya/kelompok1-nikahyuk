@@ -146,10 +146,53 @@ undangan tanpa batas.
 
     <!-- komentar start -->
     <section id="komentar" class="komentar">
-        <div class="komen">
-            <p class="komen-title">Komentar</p>
+
+        <div class="container" data-aos="fade-up">
+
+            <header class="section-header">
+            <h2>Komentar</h2>
+
+            <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="200">
+            <div class="swiper-wrapper">
+
+                <?php 
+                require_once "config.php";
+                $sql = "SELECT 
+                        id_komentar,  
+                        nama,
+                        komentar
+                        FROM komentar
+                        ORDER BY id_komentar DESC";
+                $result = mysqli_query($conn, $sql);
+                $nomor = 0;
+                while ($row = mysqli_fetch_array($result)) {
+                $nomor++;
+                ?>
+                <div class="swiper-slide">
+                    <div class="testimonial-item">
+                    <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    </div>
+                    <p>
+                        <?php echo $row[2]; ?>
+                    </p>
+                    <div class="profile mt-auto">
+                        <h3><?php echo $row[1]; ?></h3>
+                    </div>
+                    </div>
+                </div><!-- End testimonial item -->
+                <?php
+                }
+                ?>
+
+            </div>
+            <div class="swiper-pagination"></div>
+            </div>
+
         </div>
-    </section>
+
+    </section><!-- End Testimonials Section -->
+
     <!-- komentar end -->
 
 

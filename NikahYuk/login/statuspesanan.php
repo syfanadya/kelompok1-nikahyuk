@@ -37,6 +37,7 @@ require_once "config.php";
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+
 </head>
 
 <body>
@@ -145,7 +146,8 @@ require_once "config.php";
                             id_pesanan, 
                             desain, 
                             tanggal_pemesanan,
-                            status_pesanan 
+                            status_pesanan, 
+                            linkundangan
                           FROM pesanan
                           WHERE iduser = $_SESSION[iduser] 
                           ORDER BY id_pesanan DESC";
@@ -159,6 +161,10 @@ require_once "config.php";
                       <b>Type Desain : </b><?php echo $row[1];?><br/>
                       <b>Waktu Pesan : </b><?php echo $row[2];?><br/>
                       <b>Status : </b><?php echo $row[3];?><br/>
+                      <div class="linkundangan">
+                        <input type="text" class="text" value="<?php echo $row[4]?>"></input>
+                        <button><i class="bi bi-clipboard"></i></button>
+                      </div>
                     </td>
                   </tr>
                 <?php

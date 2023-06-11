@@ -25,7 +25,7 @@ include "ceklogin.php";
             <a href="#mengapa">Mengapa Ny</a>
             <a href="#katalog">Katalog</a>
             <a href="statuspesanan.php">Pemesanan</a>
-            <a href="#komentar">Komentar</a>
+            <a href="semuakomentar.php">Komentar</a>
             <a href="#pertanyaan">Pertanyaan</a>
         </div>
 
@@ -154,16 +154,58 @@ undangan tanpa batas.
     </section>
     <!-- katalog end -->
 
-
-
     <!-- komentar start -->
     <section id="komentar" class="komentar">
-        <div class="komen">
-            <p class="komen-title">Komentar</p>
-        </div>
-    </section>
-    <!-- komentar end -->
 
+        <div class="container" data-aos="fade-up">
+
+            <header class="section-header">
+            <h2>Komentar</h2>
+
+            <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="200">
+            <div class="swiper-wrapper">
+
+                <?php 
+                require_once "config.php";
+                $sql = "SELECT 
+                        id_komentar,  
+                        nama,
+                        komentar
+                        FROM komentar
+                        ORDER BY id_komentar DESC";
+                $result = mysqli_query($conn, $sql);
+                $nomor = 0;
+                while ($row = mysqli_fetch_array($result)) {
+                $nomor++;
+                ?>
+                <div class="swiper-slide">
+                    <div class="testimonial-item">
+                    <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    </div>
+                    <p>
+                        <?php echo $row[2]; ?>
+                    </p>
+                    <div class="profile mt-auto">
+                        <h3><?php echo $row[1]; ?></h3>
+                    </div>
+                    </div>
+                </div><!-- End testimonial item -->
+                <?php
+                }
+                ?>
+
+            </div>
+            <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+
+    </section><!-- End Testimonials Section -->
+
+    <!-- komentar end -->
+    <!-- komentar end -->
+    
     <!-- pertanyaan start -->
     <section id="pertanyaan" class="pertanyaan">
         <div class="tanya">

@@ -1,7 +1,7 @@
 <?php 
 require_once "config.php";
 $sql = "UPDATE pesanan
-        SET status_pesanan='$_POST[status_pesanan]'
+        SET status_pesanan='$_POST[status_pesanan]', linkundangan='$_POST[linkundangan]'
         WHERE id_pesanan=$_GET[id]";
 
 if (mysqli_query($conn,$sql)) {
