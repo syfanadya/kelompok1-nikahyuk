@@ -1,5 +1,10 @@
-<?php 
-    include "ceklogin.php";
+<?php
+session_start();
+if(!isset($_SESSION['admin']) || !$_SESSION['admin']) {
+    header("refresh:3;url=login.php");
+    echo "<p>Anda belum login sebagai admin.</p>";
+    die();
+}
 ?>
 <html>
     <head>
