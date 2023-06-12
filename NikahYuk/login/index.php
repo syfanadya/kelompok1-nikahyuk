@@ -190,15 +190,8 @@ undangan tanpa batas.
             </div>
 
         </div>
-
-<<<<<<< HEAD
     </section><!-- End Testimonials Section -->
-
-=======
-
-
     </section>
->>>>>>> 7c6c9aedddc4340f94b83bbaa601636fc1d168ff
     <!-- komentar end -->
 
 

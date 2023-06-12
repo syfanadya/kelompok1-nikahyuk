@@ -25,6 +25,7 @@ include "ceklogin.php";
             <a href="#mengapa">Mengapa Ny</a>
             <a href="#katalog">Katalog</a>
             <a href="statuspesanan.php">Pemesanan</a>
+            <a href="inforekening.php">Pembayaran</a>
             <a href="semuakomentar.php">Komentar</a>
             <a href="#pertanyaan">Pertanyaan</a>
         </div>

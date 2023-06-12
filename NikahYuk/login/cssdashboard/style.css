@@ -400,6 +400,7 @@ i[data-feather="arrow-up"] {
 
 .navbar .navbar-nav-home {
   margin-right: 24rem;
+  width: 100%;
 }
 
 .navbar .navbar-nav-home a {

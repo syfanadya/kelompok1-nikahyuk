@@ -1,3 +1,6 @@
+<?php 
+    include "ceklogin.php";
+?>
 <html>
     <head>
     <style>
@@ -29,6 +32,7 @@
     </head>
     <body>
         <h1>Data Pemesanan Undangan Digital</h1>
+        <a href="logout.php">Log-Out</a>
 
         <table>
             <tr>
