@@ -157,16 +157,18 @@ undangan tanpa batas.
 
     <!-- komentar start -->
     <section id="komentar" class="komentar">
-
+        <div class="title">
+            <h2>Komentar</h2>
+        </div>
         <div class="container" data-aos="fade-up">
 
             <header class="section-header">
-            <h2>Komentar</h2>
 
-            <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="200">
-            <div class="swiper-wrapper">
 
-                <?php 
+                <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="200">
+                    <div class="swiper-wrapper">
+
+                        <?php 
                 require_once "config.php";
                 $sql = "SELECT 
                         id_komentar,  
@@ -179,34 +181,35 @@ undangan tanpa batas.
                 while ($row = mysqli_fetch_array($result)) {
                 $nomor++;
                 ?>
-                <div class="swiper-slide">
-                    <div class="testimonial-item">
-                    <div class="stars">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                    </div>
-                    <p>
-                        <?php echo $row[2]; ?>
-                    </p>
-                    <div class="profile mt-auto">
-                        <h3><?php echo $row[1]; ?></h3>
-                    </div>
-                    </div>
-                </div><!-- End testimonial item -->
-                <?php
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i>
+                                </div>
+
+                                <div class="profile mt-auto">
+                                    <h3><?php echo $row[1]; ?></h3>
+                                    <p>
+                                        <?php echo $row[2]; ?>
+                                    </p>
+                                </div>
+                            </div>
+                        </div><!-- End testimonial item -->
+                        <?php
                 }
                 ?>
 
-            </div>
-            <div class="swiper-pagination"></div>
-            </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
 
         </div>
 
-    </section><!-- End Testimonials Section -->
+    </section>
+    <!-- komentar end -->
 
-    <!-- komentar end -->
-    <!-- komentar end -->
-    
     <!-- pertanyaan start -->
     <section id="pertanyaan" class="pertanyaan">
         <div class="tanya">

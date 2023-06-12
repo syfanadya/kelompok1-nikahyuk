@@ -288,15 +288,38 @@ html {
 }
 
 /* ===== end katalog */
+.komentar {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 
-/* ===== start komen */
+.title {
+  width: 100%;
+  height: 20%;
+  /* background-color: #0f025f; */
+}
 
-.section-header h2{
+.title h2 {
   text-align: center;
   color: #0f025f;
   font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 50px;
+  display: block;
+  margin-top: 6rem;
+}
+
+.container {
+  width: 60%;
+  height: 80%;
+  /* background-color: pink; */
+  overflow-y: scroll;
+  border: 5px solid #ff849c;
+  margin-bottom: 1.5rem;
 }
 
 .komentar .testimonial-item {
@@ -305,13 +328,24 @@ html {
   margin: 40px 30px;
   box-shadow: 0px 0 20px rgba(1, 41, 112, 0.1);
   background: #fff;
-  width: 120px;
+  width: 100px;
   min-height: 100px;
   display: flex;
   flex-direction: column;
   text-align: center;
   transition: 0.3s;
 }
+
+.testimonial-item h3 {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+
+.testimonial-item p {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+}
+/* ===== start komen */
 
 /* ===== end komen */
 
@@ -592,12 +626,12 @@ div {
     right: -100%;
     background-color: #fff;
     /* width: 25rem; */
-    height: 100vh;
-    transition: 0.3s;
+    height: 50vh;
+    transition: 0.5s;
   }
 
   .navbar .navbar-nav.active {
-    right: 0;
+    left: 25rem;
   }
   .navbar .navbar-nav a {
     color: #0f025f;
@@ -619,13 +653,13 @@ div {
     top: 100%;
     right: -100%;
     background-color: #fff;
-    width: 25rem;
+    width: 23rem;
     height: 100vh;
     transition: 0.3s;
   }
 
   .navbar .navbar-nav-home.active {
-    right: 0;
+    right: -24rem;
   }
   .navbar .navbar-nav-home a {
     color: #0f025f;
@@ -639,6 +673,362 @@ div {
   }
   .navbar .navbar-nav-home a:hover::after {
     transform: scaleX(0.2);
+  }
+  /* 999999999999999999999999999999999999 */
+  .hero {
+    height: 100px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url("../asetdashboard/bg-home-removebg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-position: 100rem 0px;
+    animation: slideRight 0.6s ease forwards;
+  }
+  .home-text {
+    position: relative;
+    margin-top: 12.5rem;
+    animation: slideRight 0.6s ease forwards;
+  }
+
+  .home-text .pre1 {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    color: #0f025f;
+    font-size: 30px;
+    margin-top: 10rem;
+    margin-left: -1.9rem;
+  }
+
+  .home-text .pre2 {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    color: #818181;
+    font-size: 15px;
+    margin-left: 1rem;
+    position: absolute;
+    top: 20.5rem;
+    margin-top: 10rem;
+  }
+
+  .img-home1 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: -10rem;
+    top: 13rem;
+    display: none;
+  }
+
+  .img-home2 {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    right: -6rem;
+    bottom: 40rem;
+    opacity: 0;
+    animation: zoomIn 0.5s ease forwards, floatImage 4s ease-in-out infinite;
+    animation-delay: 1s, 2s;
+    display: none;
+  }
+  /* ===================================== */
+  .mengapa {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .mengapa-slide {
+    background-color: #ff849c;
+    width: 90%;
+    height: 90%;
+    border-radius: 1.5rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25),
+      -5px -5px 5px rgba(0, 0, 0, 0.25);
+  }
+
+  .mengapa-slide .mengapa-pre1,
+  .mengapa-p1,
+  .mengapa-pre2 {
+    color: #ffffff;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+  }
+
+  .mengapa-slide .mengapa-pre1 {
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 2rem;
+  }
+
+  .mengapa-slide .mengapa-p1 {
+    font-weight: 600;
+    font-size: 15px;
+    margin-top: 1rem;
+  }
+
+  .mengapa-slide .mengapa-pre2 {
+    font-weight: 370;
+    font-size: 15px;
+    margin-top: 2rem;
+  }
+
+  .mengapa-slide .img-mengapa1 {
+    width: 140px;
+    height: 140px;
+    display: block;
+    margin: auto;
+  }
+
+  .mengapa-slide .img-mengapa1-slide3 {
+    width: 210px;
+    height: 140px;
+    display: block;
+    margin: auto;
+  }
+
+  .prevButton,
+  .nextButton {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    cursor: pointer;
+  }
+
+  .prevButton {
+    left: 8rem;
+  }
+  .nextButton {
+    right: 8rem;
+  }
+  /* ================================== */
+  .katalog {
+    width: 100%;
+    height: 250vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #878787; */
+  }
+
+  .katalog .pembungkus {
+    width: 85%;
+  }
+
+  .katalog .katalog-text {
+    text-align: center;
+    color: #0f025f;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    /* margin-top: -27rem; */
+  }
+
+  .katalog .content {
+    width: 100%;
+    height: 200vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color: #f60000; */
+    /* margin-top: -30rem; */
+  }
+
+  .katalog .content .container-katalog {
+    width: 280px;
+    height: 380px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25),
+      -5px -5px 5px rgba(0, 0, 0, 0.25);
+    background-color: #ffffff;
+    margin: 4rem 4rem;
+    text-align: center;
+    border-radius: 15px;
+  }
+
+  .katalog .content .title-katalog {
+    color: #0f025f;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 2rem;
+  }
+
+  .katalog .content .container-katalog .img-katalog {
+    width: 280px;
+    height: 280px;
+  }
+
+  .katalog .content .container-katalog .target-katalog {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    background-color: #ff849c;
+    padding: 0.8rem 2.7rem;
+    border-radius: 2rem;
+    transition: 0.3s ease-in-out;
+  }
+
+  .katalog .content .container-katalog .target-katalog:hover {
+    background-color: #fddbe7;
+    color: #ff849c;
+  }
+  /* =================================== */
+  .komentar {
+    width: 100%;
+    height: 25%;
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; */
+  }
+
+  .title {
+    width: 100%;
+    height: 20%;
+    /* background-color: #0f025f; */
+  }
+
+  .title h2 {
+    text-align: center;
+    color: #0f025f;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    display: block;
+    margin-top: 6rem;
+  }
+
+  .container {
+    width: 80%;
+    height: 80%;
+    /* background-color: pink; */
+    overflow-y: scroll;
+    border: 0.5px solid #ff849c;
+    /* margin-bottom: 1.5rem;
+    margin-top: 2rem; */
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+  }
+
+  .komentar .testimonial-item {
+    box-sizing: content-box;
+    padding: 20px;
+    /* margin: 40px 30px; */
+    margin: 10px 10px;
+    box-shadow: 0px 0 20px rgba(1, 41, 112, 0.1);
+    background: #fff;
+    width: 100px;
+    height: 100px;
+    /* display: flex;
+    flex-direction: column;
+    text-align: center; */
+    transition: 0.3s;
+  }
+
+  .testimonial-item h3 {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+  }
+
+  .testimonial-item p {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+  }
+  /* ==================================== */
+  .pertanyaan {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .pertanyaan .tanya {
+    width: 85%;
+    height: 100%;
+    position: relative;
+  }
+
+  .pertanyaan .pertanyaan-title {
+    text-align: center;
+    color: #0f025f;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    margin-top: 10rem;
+  }
+
+  .tanya .box {
+    width: 100%;
+    height: 86.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -3rem;
+  }
+
+  .box .box-pertanyaan {
+    width: 100%;
+    height: 15px;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2),
+      -5px -5px 5px rgba(0, 0, 0, 0.2);
+    margin: 1rem;
+    overflow: hidden;
+    transition: height 0.6s ease-in-out;
+    padding-top: 7.5px;
+  }
+  .box-pertanyaan .ditanya {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 10px;
+    padding-left: 1.5rem;
+  }
+
+  .box-pertanyaan .jawab {
+    font-family: "Inter", sans-serif;
+    font-weight: lighter;
+    font-size: 10px;
+    margin-top: 1rem;
+    padding-left: 1.5rem;
+  }
+
+  .box .box-pertanyaan:hover {
+    height: 80px;
+  }
+
+  .tanya a {
+    color: #ff849c;
+    display: block;
+    margin-left: 80rem;
+    position: absolute;
+    bottom: 5rem;
+    right: 2rem;
+    padding: 2px 4px;
+    transition: 0.4s ease-in-out;
+  }
+  i[data-feather="arrow-up"] {
+    font-size: 244px; /* Ubah ukuran ikon sesuai kebutuhan Anda */
+  }
+  .tanya a:hover {
+    color: #0f025f;
+    background-color: #fddbe7;
   }
 
   /* ======================================= */
@@ -697,6 +1087,14 @@ div {
 
   .container2-create .line {
     display: none;
+  }
+  .container1-create .icon a img {
+    width: 13px;
+    height: 24px;
+    top: 10rem;
+    left: 5rem;
+    z-index: 999999999999;
+    animation: slideTop 0.6s ease forwards;
   }
 }
 

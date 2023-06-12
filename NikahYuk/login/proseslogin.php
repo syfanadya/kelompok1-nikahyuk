@@ -3,8 +3,7 @@ session_start();
 require_once "config.php";
 
 if (empty($_POST['email']) || empty($_POST['password'])) {
-    header("refresh:3;url=login.php");
-    echo "<p>Email dan password harus diisi.</p>";
+    header("refresh:0;url=logingagal.php");
     exit();
 }
 
@@ -27,7 +26,7 @@ if (mysqli_num_rows($result) == 1) {
     } else {
         // User is a regular user
         $_SESSION['admin'] = false;
-        header("refresh:0;url=dashboard.php");
+        header("refresh:0;url=loginsukses.php");
     }
 } else {
     header("refresh:0;url=logingagal.php");
