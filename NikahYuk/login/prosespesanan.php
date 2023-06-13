@@ -146,65 +146,67 @@ if (!isset($_POST['lagu'])) {
 
 // Siapkan query SQL untuk menyimpan data pesanan ke database
 $sql =  "INSERT INTO pesanan (
-            iduser,
-            desain,
-            nama_pengantin_pria,
-            nama_pengantin_wanita,
-            nomor_hp,
-            lokasi_acara,
-            waktu_acara,
-            tanggal_acara,
-            nama_ayah_pengantin_pria,
-            nama_ibu_pengantin_pria,
-            nama_ayah_pengantin_wanita,
-            nama_ibu_pengantin_wanita,
-            ayat_kitab_suci,
-            foto_pengantin_pria,
-            foto_pengantin_wanita,
-            foto_prewedd_satu,
-            foto_galeri_satu,
-            norek_pengantin_pria,
-            norek_pengantin_wanita,
-            lagu,
-            tanggal_pemesanan,
-            foto_prewedd_dua,
-            foto_galeri_dua,
-            foto_galeri_tiga,
-            foto_galeri_empat
-        ) VALUES (
-            '$_SESSION[iduser]',
-            '$_POST[desain]', 
-            '$_POST[nama_pengantin_pria]', 
-            '$_POST[nama_pengantin_wanita]', 
-            '$_POST[nomor_hp]', 
-            '$_POST[lokasi_acara]',
-            '$_POST[waktu_acara]',
-            '$_POST[tanggal_acara]',
-            '$_POST[nama_ayah_pengantin_pria]',
-            '$_POST[nama_ibu_pengantin_pria]',
-            '$_POST[nama_ayah_pengantin_wanita]',
-            '$_POST[nama_ibu_pengantin_wanita]',
-            '$_POST[ayat_kitab_suci]',
-            '$foto_pengantin_pria_name',
-            '$foto_pengantin_wanita_name',
-            '$foto_prewedd_satu_name',
-            '$foto_galeri_satu_name',
-            '$_POST[norek_pengantin_pria]',
-            '$_POST[norek_pengantin_wanita]',
-            '$_POST[lagu]',
-            NOW(),
-            '$foto_prewedd_dua_name',
-            '$foto_galeri_dua_name',
-            '$foto_galeri_tiga_name',
-            '$foto_galeri_empat_name'
-        )";
+    iduser,
+    desain,
+    nama_pengantin_pria,
+    nama_pengantin_wanita,
+    nomor_hp,
+    lokasi_acara,
+    waktu_acara,
+    tanggal_acara,
+    nama_ayah_pengantin_pria,
+    nama_ibu_pengantin_pria,
+    nama_ayah_pengantin_wanita,
+    nama_ibu_pengantin_wanita,
+    ayat_kitab_suci,
+    foto_pengantin_pria,
+    foto_pengantin_wanita,
+    foto_prewedd_satu,
+    foto_galeri_satu,
+    norek_pengantin_pria,
+    norek_pengantin_wanita,
+    lagu,
+    tanggal_pemesanan,
+    foto_prewedd_dua,
+    foto_galeri_dua,
+    foto_galeri_tiga,
+    foto_galeri_empat,
+    linkundangan
+) VALUES (
+    '$_SESSION[iduser]',
+    '$_POST[desain]', 
+    '$_POST[nama_pengantin_pria]', 
+    '$_POST[nama_pengantin_wanita]', 
+    '$_POST[nomor_hp]', 
+    '$_POST[lokasi_acara]',
+    '$_POST[waktu_acara]',
+    '$_POST[tanggal_acara]',
+    '$_POST[nama_ayah_pengantin_pria]',
+    '$_POST[nama_ibu_pengantin_pria]',
+    '$_POST[nama_ayah_pengantin_wanita]',
+    '$_POST[nama_ibu_pengantin_wanita]',
+    '$_POST[ayat_kitab_suci]',
+    '$foto_pengantin_pria_name',
+    '$foto_pengantin_wanita_name',
+    '$foto_prewedd_satu_name',
+    '$foto_galeri_satu_name',
+    '$_POST[norek_pengantin_pria]',
+    '$_POST[norek_pengantin_wanita]',
+    '$_POST[lagu]',
+    NOW(),
+    '$foto_prewedd_dua_name',
+    '$foto_galeri_dua_name',
+    '$foto_galeri_tiga_name',
+    '$foto_galeri_empat_name',
+    'default_value'
+)";
 
 // Jalankan query SQL dan beri tanggapan sesuai hasilnya
 if (mysqli_query($conn, $sql)) {
-    header("refresh:3;url=popupsukses.php");
-    echo "<p>Data berhasil disimpan.</p>";
+header("refresh:3;url=popupsukses.php");
+echo "<p>Data berhasil disimpan.</p>";
 } else {
-    echo "<p>Ups, data gagal disimpan:</p>";
+echo "<p>Ups, data gagal disimpan:</p>";
 }
 ?>
 
