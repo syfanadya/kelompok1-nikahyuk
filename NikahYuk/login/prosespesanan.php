@@ -204,25 +204,51 @@ $sql =  "INSERT INTO pesanan (
 // Jalankan query SQL dan beri tanggapan sesuai hasilnya
 if (mysqli_query($conn, $sql)) {
 header("refresh:3;url=popupsukses.php");
-echo "<p>Data berhasil disimpan.</p>";
+
 } else {
 echo "<p>Ups, data gagal disimpan:</p>";
 }
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title></title>
+    <style>
+    .loader-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .loader {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        border: 8px solid #f3f3f3;
+        border-top: 8px solid #3498db;
+        animation: spin 2s linear infinite;
+    }
+
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+    </style>
     <link rel="shortcut icon" href="./asetdashboard/logo.png" type="image/x-icon" />
 </head>
 
 <body>
-
+    <div class="loader-container">
+        <div class="loader"></div>
+    </div>
 </body>
 
 </html>

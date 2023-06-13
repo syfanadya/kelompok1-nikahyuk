@@ -14,6 +14,38 @@ include "ceklogin.php";
     <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
     <link rel="shortcut icon" href="./asetdashboard/logo.png" type="image/x-icon" />
     <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+    .navbar .navbar-nav-home {
+        margin-right: 10rem;
+        width: 100%;
+    }
+
+    .navbar .navbar-nav-home a {
+        font-family: "Inter", sans-serif;
+        color: #878787;
+        text-decoration: none;
+        font-size: 18px;
+        margin: 0 1rem;
+        transition: 0.3s ease-in-out;
+    }
+
+    .navbar .navbar-nav-home a:hover {
+        color: #0f025f;
+    }
+
+    .navbar-extra-home {
+        display: flex;
+    }
+
+    .navbar-extra-home a {
+        text-decoration: none;
+        font-family: "Inter", sans-serif;
+        color: #0f025f;
+        font-size: 19px;
+        margin-left: 1rem;
+        font-weight: 700;
+    }
+    </style>
 </head>
 
 <body class="body-home-page">

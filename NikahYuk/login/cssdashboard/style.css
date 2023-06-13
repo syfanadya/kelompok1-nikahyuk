@@ -432,33 +432,6 @@ i[data-feather="arrow-up"] {
 
 /* home start */
 
-.navbar .navbar-nav-home {
-  margin-right: 24rem;
-  width: 100%;
-}
-
-.navbar .navbar-nav-home a {
-  font-family: "Inter", sans-serif;
-  color: #878787;
-  text-decoration: none;
-  font-size: 18px;
-  margin: 0 1rem;
-  transition: 0.3s ease-in-out;
-}
-
-.navbar .navbar-nav-home a:hover {
-  color: #0f025f;
-}
-
-.navbar-extra-home a {
-  text-decoration: none;
-  font-family: "Inter", sans-serif;
-  color: #0f025f;
-  font-size: 18px;
-  margin-left: 1rem;
-  font-weight: 700;
-}
-
 /* home end */
 
 /* =======float bg */
