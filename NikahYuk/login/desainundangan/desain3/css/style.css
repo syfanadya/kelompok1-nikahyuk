@@ -49,6 +49,20 @@ body {
   bottom: 20rem;
 } */
 
+.content .toggleButton {
+  position: fixed;
+  z-index: 999999999999999999999999;
+  color: #fff;
+  right: 10rem;
+  background-color: #ff849c;
+  border: none;
+  transition: 0.3s ease-in-out;
+}
+
+.content .toggleButton:hover {
+  background-color: #93b9d8;
+}
+
 .content .left-bg,
 .right-bg,
 .slide2 .left-bg,

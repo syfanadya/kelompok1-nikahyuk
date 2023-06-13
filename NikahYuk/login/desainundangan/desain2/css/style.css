@@ -33,6 +33,20 @@ body {
   justify-content: center;
 }
 
+.content .toggleButton {
+  position: fixed;
+  z-index: 999999999999999999999999;
+  color: #fff;
+  right: 10rem;
+  background-color: #ff849c;
+  transition: 0.3s ease-in-out;
+  border: none;
+}
+
+.content .toggleButton:hover {
+  background-color: #93b9d8;
+}
+
 .content .kiriatas,
 .slide2 .kiriatas,
 .slide4 .kiriatas,

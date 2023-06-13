@@ -469,9 +469,10 @@ div {
 
 /* detail peesanan start*/
 .container1-create {
-  width: 50%;
+  width: 45%;
   height: 49.5rem;
   position: relative;
+  /* background-color: #0f025f; */
 }
 
 .container1-create .iphone {
@@ -493,10 +494,11 @@ div {
 }
 
 .container2-create {
-  width: 50%;
+  width: 45%;
   height: 49.5rem;
   text-align: center;
   position: relative;
+  /* background-color: #f60000; */
 }
 
 .container2-create .title,

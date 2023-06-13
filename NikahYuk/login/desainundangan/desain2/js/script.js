@@ -7,12 +7,38 @@ function unlockSection() {
   document.body.style.overflow = "visible";
 }
 
+// function playMusic() {
+//   var music = new Audio();
+//   music.src = "./aset/only.mp3";
+//   music.loop = true;
+//   music.autoplay = true;
+// }
+
+var music = new Audio();
+music.src = "./aset/only.mp3";
+music.loop = true;
+music.autoplay = false;
+
+var isPlaying = false;
+
 function playMusic() {
-  var music = new Audio();
-  music.src = "./aset/only.mp3";
-  music.loop = true;
-  music.autoplay = true;
+  if (isPlaying) {
+    music.pause();
+  } else {
+    music.play();
+  }
+  isPlaying = !isPlaying;
 }
+
+var toggleButton = document.getElementById("toggleButton");
+
+toggleButton.addEventListener("click", function () {
+  playMusic();
+  toggleButton.innerHTML = isPlaying
+    ? '<i data-feather="pause"></i>'
+    : '<i data-feather="play"></i>';
+  feather.replace();
+});
 
 function copyText() {
   var text = document.getElementById("myText").innerText;
