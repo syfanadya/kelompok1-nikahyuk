@@ -162,8 +162,10 @@ require_once "config.php";
                       <b>Waktu Pesan : </b><?php echo $row[2];?><br/>
                       <b>Status : </b><?php echo $row[3];?><br/>
                       <div class="linkundangan">
-                        <input type="text" class="text" value="<?php echo $row[4]?>"></input>
-                        <button><i class="bi bi-clipboard"></i></button>
+                        <div class="link-copy">
+                          <input type="text" class="text" value="<?php echo $row[4]?>"></input>
+                          <button><i class="bi bi-clipboard"></i></button>
+                        </div>
                       </div>
                     </td>
                   </tr>
@@ -250,6 +252,26 @@ require_once "config.php";
   </footer><!-- End Footer -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script>
+    // NOREK COPY
+    let copyButtons = document.querySelectorAll(".link-copy button");
+
+    copyButtons.forEach(function(button) {
+      button.addEventListener("click", function() {
+        let copyText = button.closest(".link-copy");
+        let input = copyText.querySelector("input.text");
+        input.select();
+        document.execCommand("copy");
+        copyText.classList.add("active");
+        window.getSelection().removeAllRanges();
+        setTimeout(function() {
+          copyText.classList.remove("active");
+        }, 2500);
+      });
+    });
+
+  </script>
 
   <!-- Vendor JS Files -->
   <script src="assetspesanan/vendor/purecounter/purecounter_vanilla.js"></script>
