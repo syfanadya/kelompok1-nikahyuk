@@ -145,20 +145,17 @@ require_once "config.php";
               <div class="row">
                 <div class="input-group">
                   <label>Type Desain</label>
-                  <select class="input-control" name="desain">
-                    <option value="Classic">Classic</option>
-                    <option value="Blue Flower">Blue Flower</option>
-                    <option value="Golden">Golden</option>
-                  </select>
+                  
                 </div>
               </div>
 
               <div class="row">
-                  <div class="input-group">
-                  <label>Nama Pengantin Pria</label>
-                  <input type="text" placeholder="Nama Lengkap : Lee Jongsuk" class="input-control" name="nama_pengantin_pria">
-                  </div> 
+                <div class="input-group">
+                  <label>Type Desain</label>
+                  <input type="text" class="input-control" name="Classis" value="Classic" readonly>
+                </div>
               </div>
+
 
               <div class="row">
                 <div class="input-group">
